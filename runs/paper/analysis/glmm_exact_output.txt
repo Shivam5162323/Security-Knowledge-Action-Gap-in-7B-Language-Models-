@@ -1,0 +1,157 @@
+R 4.5.3 | lme4 2.0.6 
+programs: 2520 | vulnerable: 936 | models: 9 | classes: 7 | tasks: 56 | model x class cells: 63 | model x task cells: 504 
+
+===== K, intercepts for model, class and task =====
+              Estimate Std. Error    z value     Pr(>|z|)
+(Intercept) -1.1132513   1.144371 -0.9728067 0.3306493859
+K_z          0.3845457   0.100545  3.8246126 0.0001309779
+ Groups Name        Std.Dev.
+ task   (Intercept) 1.58747 
+ model  (Intercept) 0.72267 
+ cwe    (Intercept) 2.89662 
+OR = 1.469, Wald 95% CI 1.206 to 1.789, z = 3.825, p = 0.0001 | LRT chisq = 13.952, p = 0.0002 | logLik = -823.96 | singular: FALSE
+
+===== K, with cell-level intercepts =====
+              Estimate Std. Error    z value  Pr(>|z|)
+(Intercept) -1.8116083  1.5313641 -1.1830030 0.2368080
+K_z          0.2190316  0.2881967  0.7600074 0.4472502
+ Groups  Name        Std.Dev.
+ cell_mt (Intercept) 1.64340 
+ cell_mc (Intercept) 1.41115 
+ task    (Intercept) 2.11177 
+ model   (Intercept) 0.70647 
+ cwe     (Intercept) 3.89774 
+OR = 1.245, Wald 95% CI 0.708 to 2.190, z = 0.760, p = 0.4473 | LRT chisq = 0.458, p = 0.4984 | logLik = -715.07 | singular: FALSE
+
+LRT, cell-level intercepts (K model):
+Data: data
+Models:
+mA: vulnerable ~ K_z + (1 | model) + (1 | cwe) + (1 | task)
+mB: vulnerable ~ K_z + (1 | model) + (1 | cwe) + (1 | task) + (1 | cell_mc) + (1 | cell_mt)
+   npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)    
+mA    5 1657.9 1687.1 -823.96    1647.9                         
+mB    7 1444.1 1485.0 -715.07    1430.1 217.79  2  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+===== recognises, intercepts for model, class and task =====
+              Estimate Std. Error    z value  Pr(>|z|)
+(Intercept) -1.1252151  1.0610868 -1.0604364 0.2889461
+recognises   0.1666921  0.1920564  0.8679332 0.3854309
+ Groups Name        Std.Dev.
+ task   (Intercept) 1.56952 
+ model  (Intercept) 0.69885 
+ cwe    (Intercept) 2.66737 
+OR = 1.181, Wald 95% CI 0.811 to 1.721, z = 0.868, p = 0.3854 | LRT chisq = 0.710, p = 0.3994 | logLik = -830.58 | singular: FALSE
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: vulnerable ~ recognises + (1 | model) + (1 | cwe) + (1 | task)
+   Data: data
+      AIC       BIC    logLik -2*log(L)  df.resid 
+1671.1674 1700.3275 -830.5837 1661.1674      2515 
+Random effects:
+ Groups Name        Std.Dev.
+ task   (Intercept) 1.5695  
+ model  (Intercept) 0.6989  
+ cwe    (Intercept) 2.6674  
+Number of obs: 2520, groups:  task, 56; model, 9; cwe, 7
+Fixed Effects:
+(Intercept)   recognises  
+    -1.1252       0.1667  
+
+===== recognises, with cell-level intercepts =====
+               Estimate Std. Error     z value  Pr(>|z|)
+(Intercept) -1.82744270  1.4908720 -1.22575425 0.2202912
+recognises   0.03568225  0.3895759  0.09159255 0.9270218
+ Groups  Name        Std.Dev.
+ cell_mt (Intercept) 1.64424 
+ cell_mc (Intercept) 1.44848 
+ task    (Intercept) 2.11209 
+ model   (Intercept) 0.68267 
+ cwe     (Intercept) 3.78281 
+OR = 1.036, Wald 95% CI 0.483 to 2.224, z = 0.092, p = 0.9270 | LRT chisq = 0.008, p = 0.9292 | logLik = -715.29 | singular: FALSE
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: vulnerable ~ recognises + (1 | model) + (1 | cwe) + (1 | task) +  
+    (1 | cell_mc) + (1 | cell_mt)
+   Data: data
+      AIC       BIC    logLik -2*log(L)  df.resid 
+1444.5837 1485.4078 -715.2918 1430.5837      2513 
+Random effects:
+ Groups  Name        Std.Dev.
+ cell_mt (Intercept) 1.6442  
+ cell_mc (Intercept) 1.4485  
+ task    (Intercept) 2.1121  
+ model   (Intercept) 0.6827  
+ cwe     (Intercept) 3.7828  
+Number of obs: 2520, groups:  
+cell_mt, 504; cell_mc, 63; task, 56; model, 9; cwe, 7
+Fixed Effects:
+(Intercept)   recognises  
+   -1.82744      0.03568  
+
+===== K, with cell-level intercepts, functional programs =====
+               Estimate Std. Error    z value  Pr(>|z|)
+(Intercept) -1.23077933  2.1122428 -0.5826884 0.5601031
+K_z         -0.04891022  0.3521675 -0.1388834 0.8895423
+ Groups  Name        Std.Dev.
+ cell_mt (Intercept) 1.8824  
+ cell_mc (Intercept) 1.7389  
+ task    (Intercept) 2.4447  
+ model   (Intercept) 1.1900  
+ cwe     (Intercept) 5.3977  
+OR = 0.952, Wald 95% CI 0.478 to 1.899, z = -0.139, p = 0.8895 | LRT chisq = 0.018, p = 0.8922 | logLik = -428.75 | singular: FALSE
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: vulnerable ~ K_z + (1 | model) + (1 | cwe) + (1 | task) + (1 |  
+    cell_mc) + (1 | cell_mt)
+   Data: data
+      AIC       BIC    logLik -2*log(L)  df.resid 
+ 871.5067  910.7060 -428.7534  857.5067      1991 
+Random effects:
+ Groups  Name        Std.Dev.
+ cell_mt (Intercept) 1.882   
+ cell_mc (Intercept) 1.739   
+ task    (Intercept) 2.445   
+ model   (Intercept) 1.190   
+ cwe     (Intercept) 5.398   
+Number of obs: 1998, groups:  
+cell_mt, 476; cell_mc, 63; task, 56; model, 9; cwe, 7
+Fixed Effects:
+(Intercept)          K_z  
+   -1.23078     -0.04891  
+
+===== recognises, with cell-level intercepts, functional programs =====
+              Estimate Std. Error    z value  Pr(>|z|)
+(Intercept) -1.1515026   2.109112 -0.5459655 0.5850896
+recognises  -0.3694478   0.473312 -0.7805587 0.4350621
+ Groups  Name        Std.Dev.
+ cell_mt (Intercept) 1.8812  
+ cell_mc (Intercept) 1.7429  
+ task    (Intercept) 2.4478  
+ model   (Intercept) 1.2026  
+ cwe     (Intercept) 5.3844  
+OR = 0.691, Wald 95% CI 0.273 to 1.748, z = -0.781, p = 0.4351 | LRT chisq = 0.443, p = 0.5056 | logLik = -428.54 | singular: FALSE
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: vulnerable ~ recognises + (1 | model) + (1 | cwe) + (1 | task) +  
+    (1 | cell_mc) + (1 | cell_mt)
+   Data: data
+      AIC       BIC    logLik -2*log(L)  df.resid 
+ 871.0819  910.2812 -428.5410  857.0819      1991 
+Random effects:
+ Groups  Name        Std.Dev.
+ cell_mt (Intercept) 1.881   
+ cell_mc (Intercept) 1.743   
+ task    (Intercept) 2.448   
+ model   (Intercept) 1.203   
+ cwe     (Intercept) 5.384   
+Number of obs: 1998, groups:  
+cell_mt, 476; cell_mc, 63; task, 56; model, 9; cwe, 7
+Fixed Effects:
+(Intercept)   recognises  
+    -1.1515      -0.3694  

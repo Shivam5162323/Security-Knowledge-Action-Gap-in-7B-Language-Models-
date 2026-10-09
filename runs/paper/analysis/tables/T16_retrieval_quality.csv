@@ -1,0 +1,5 @@
+condition,hit_at_k,precision_at_k
+ctx_irrelevant,0.0,0.0
+rag_dense,0.3571,0.1726
+rag_hybrid,0.3929,0.1964
+rag_oracle,1.0,1.0

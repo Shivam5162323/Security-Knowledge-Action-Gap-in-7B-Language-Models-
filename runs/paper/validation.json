@@ -1,0 +1,1575 @@
+{
+ "semgrep": "1.180.0",
+ "asan": true,
+ "c_compiler": "/usr/bin/gcc",
+ "tasks": {
+  "CWE89-01": {
+   "cwe": "CWE-89",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe89-sql-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE89-02": {
+   "cwe": "CWE-89",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe89-sql-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE89-03": {
+   "cwe": "CWE-89",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe89-sql-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE89-04": {
+   "cwe": "CWE-89",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe89-sql-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE89-05": {
+   "cwe": "CWE-89",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe89-sql-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE89-06": {
+   "cwe": "CWE-89",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe89-sql-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE89-07": {
+   "cwe": "CWE-89",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe89-sql-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE89-08": {
+   "cwe": "CWE-89",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe89-sql-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE79-01": {
+   "cwe": "CWE-79",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe79-html-fstring",
+     "skgap-cwe79-xss"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE79-02": {
+   "cwe": "CWE-79",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe79-xss"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE79-03": {
+   "cwe": "CWE-79",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe79-xss"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE79-04": {
+   "cwe": "CWE-79",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe79-xss"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE79-05": {
+   "cwe": "CWE-79",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe79-xss"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE79-06": {
+   "cwe": "CWE-79",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe79-html-fstring"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE79-07": {
+   "cwe": "CWE-79",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe79-xss"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE79-08": {
+   "cwe": "CWE-79",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe79-xss"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE22-01": {
+   "cwe": "CWE-22",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe22-path-traversal"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE22-02": {
+   "cwe": "CWE-22",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe22-path-traversal"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE22-03": {
+   "cwe": "CWE-22",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe22-path-traversal"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE22-04": {
+   "cwe": "CWE-22",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe22-path-traversal"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE22-05": {
+   "cwe": "CWE-22",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe22-path-traversal"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE22-06": {
+   "cwe": "CWE-22",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe22-path-traversal"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE22-07": {
+   "cwe": "CWE-22",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe22-path-traversal"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE22-08": {
+   "cwe": "CWE-22",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe22-path-traversal"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE78-01": {
+   "cwe": "CWE-78",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe78-command-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE78-02": {
+   "cwe": "CWE-78",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe78-command-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE78-03": {
+   "cwe": "CWE-78",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe78-command-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE78-04": {
+   "cwe": "CWE-78",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe78-command-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE78-05": {
+   "cwe": "CWE-78",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe78-command-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE78-06": {
+   "cwe": "CWE-78",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe78-command-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE78-07": {
+   "cwe": "CWE-78",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe78-command-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE78-08": {
+   "cwe": "CWE-78",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe78-command-injection"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE502-01": {
+   "cwe": "CWE-502",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe502-unsafe-deserialization"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE502-02": {
+   "cwe": "CWE-502",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe502-unsafe-deserialization"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE502-03": {
+   "cwe": "CWE-502",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe502-unsafe-deserialization"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE502-04": {
+   "cwe": "CWE-502",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe502-unsafe-deserialization"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE502-05": {
+   "cwe": "CWE-502",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe502-unsafe-deserialization"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE502-06": {
+   "cwe": "CWE-502",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe502-unsafe-deserialization"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE502-07": {
+   "cwe": "CWE-502",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe502-unsafe-deserialization"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE502-08": {
+   "cwe": "CWE-502",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe502-unsafe-deserialization"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true
+    }
+   }
+  },
+  "CWE798-01": {
+   "cwe": "CWE-798",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe798-credential-argument"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true,
+     "placeholder": false
+    }
+   }
+  },
+  "CWE798-02": {
+   "cwe": "CWE-798",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe798-credential-variable",
+     "skgap-cwe798-credential-argument"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true,
+     "placeholder": true
+    }
+   }
+  },
+  "CWE798-03": {
+   "cwe": "CWE-798",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe798-credential-variable",
+     "skgap-cwe798-credential-argument"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true,
+     "placeholder": false
+    }
+   }
+  },
+  "CWE798-04": {
+   "cwe": "CWE-798",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe798-credential-argument",
+     "skgap-cwe798-credential-in-url-or-header"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true,
+     "placeholder": true
+    }
+   }
+  },
+  "CWE798-05": {
+   "cwe": "CWE-798",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe798-credential-argument"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true,
+     "placeholder": false
+    }
+   }
+  },
+  "CWE798-06": {
+   "cwe": "CWE-798",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe798-credential-variable"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true,
+     "placeholder": true
+    }
+   }
+  },
+  "CWE798-07": {
+   "cwe": "CWE-798",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe798-credential-argument"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true,
+     "placeholder": true
+    }
+   }
+  },
+  "CWE798-08": {
+   "cwe": "CWE-798",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe798-credential-in-url-or-header"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "import_ok": true,
+     "entry_ok": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "import_ok": true,
+     "entry_ok": true,
+     "placeholder": false
+    }
+   }
+  },
+  "CWE120-01": {
+   "cwe": "CWE-120",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe120-unbounded-scanf"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "asan": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "asan": true
+    }
+   }
+  },
+  "CWE120-02": {
+   "cwe": "CWE-120",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe120-unbounded-copy"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "asan": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "asan": true
+    }
+   }
+  },
+  "CWE120-03": {
+   "cwe": "CWE-120",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe120-unbounded-copy"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "asan": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "asan": true
+    }
+   }
+  },
+  "CWE120-04": {
+   "cwe": "CWE-120",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe120-unbounded-copy"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "asan": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "asan": true
+    }
+   }
+  },
+  "CWE120-05": {
+   "cwe": "CWE-120",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe120-unbounded-copy"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "asan": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "asan": true
+    }
+   }
+  },
+  "CWE120-06": {
+   "cwe": "CWE-120",
+   "static_valid": false,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": false,
+    "rules": [],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "asan": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "asan": true
+    }
+   }
+  },
+  "CWE120-07": {
+   "cwe": "CWE-120",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe120-unbounded-copy"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "asan": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "asan": true
+    }
+   }
+  },
+  "CWE120-08": {
+   "cwe": "CWE-120",
+   "static_valid": true,
+   "dynamic_valid": true,
+   "functional_checked": true,
+   "static": {
+    "secure": false,
+    "insecure": true,
+    "rules": [
+     "skgap-cwe120-unbounded-scanf"
+    ],
+    "note": ""
+   },
+   "dynamic": {
+    "secure": {
+     "functional": true,
+     "exploit": false,
+     "asan": true
+    },
+    "insecure": {
+     "functional": true,
+     "exploit": true,
+     "asan": true
+    }
+   }
+  }
+ },
+ "summary": {
+  "n_tasks": 56,
+  "static_valid": 55,
+  "dynamic_valid": 56,
+  "functional_checked": 56
+ }
+}

@@ -1,0 +1,37 @@
+# CWE-78: data from a function parameter or the HTTP request reaches a command
+# line that is interpreted by a shell.
+rules:
+  - id: skgap-cwe78-command-injection
+    languages: [python]
+    severity: ERROR
+    message: "CWE-78: untrusted input is placed in a shell command line"
+    metadata: {cwe: CWE-78}
+    mode: taint
+    pattern-sources:
+      - patterns:
+          - pattern: |
+              def $F(..., $P, ...):
+                  ...
+          - focus-metavariable: $P
+      - pattern-either:
+          - pattern: request.args
+          - pattern: request.form
+          - pattern: request.values
+          - pattern: request.json
+          - pattern: request.get_json(...)
+    pattern-sanitizers:
+      - pattern-either:
+          - pattern: shlex.quote(...)
+          - pattern: pipes.quote(...)
+          - pattern: quote(...)
+          - pattern: int(...)
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: os.system($X)
+              - pattern: os.popen($X, ...)
+              - pattern: subprocess.getoutput($X)
+              - pattern: subprocess.getstatusoutput($X)
+              - pattern: subprocess.$FN($X, ..., shell=True, ...)
+              - pattern: $FN($X, ..., shell=True, ...)
+          - focus-metavariable: $X

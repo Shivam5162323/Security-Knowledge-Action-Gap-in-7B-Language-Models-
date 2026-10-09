@@ -1,0 +1,592 @@
+{
+ "run": "paper",
+ "synthetic": false,
+ "n_models": 9,
+ "n_cwes": 7,
+ "n_tasks": 56,
+ "conditions": {
+  "baseline": {
+   "vulnerable": 0.37142857142857144,
+   "secure_pass": 0.4583333333333333,
+   "functional": 0.7928571428571428
+  },
+  "reminder": {
+   "vulnerable": 0.2388888888888889,
+   "secure_pass": 0.476984126984127,
+   "functional": 0.6607142857142857
+  },
+  "ctx_irrelevant": {
+   "vulnerable": 0.3380952380952381,
+   "secure_pass": 0.4738095238095238,
+   "functional": 0.7698412698412699
+  },
+  "rag_dense": {
+   "vulnerable": 0.2996031746031746,
+   "secure_pass": 0.46785714285714286,
+   "functional": 0.7297619047619047
+  },
+  "rag_hybrid": {
+   "vulnerable": 0.3103174603174603,
+   "secure_pass": 0.4531746031746032,
+   "functional": 0.7138888888888889
+  },
+  "rag_oracle": {
+   "vulnerable": 0.2892857142857143,
+   "secure_pass": 0.4829365079365079,
+   "functional": 0.7253968253968255
+  }
+ },
+ "n_generations": 15120,
+ "complete": true,
+ "detector_kappa": 0.7559003307597464,
+ "knowledge_mean": 0.5681216931216931,
+ "baseline_ir": {
+  "est": 0.37142857142857144,
+  "lo": 0.26743055555555567,
+  "hi": 0.4797619047619048,
+  "se": 0.053899545165891585,
+  "B": 2000,
+  "lo90": 0.28650793650793654,
+  "hi90": 0.4579365079365079
+ },
+ "H1": {
+  "gap": 0.21296296296296297,
+  "ci": [
+   0.08565934065934072,
+   0.40229979035639407
+  ],
+  "lower_one_sided": 0.1,
+  "margin": 0.05,
+  "supported": true,
+  "n_cells": 108
+ },
+ "H2_spearman": {
+  "rho": -0.4696879024724806,
+  "p": 0.0001999600079984003,
+  "n": 63,
+  "ci": [
+   -0.7455319608503015,
+   0.11886731913154654
+  ]
+ },
+ "H2_fe_cwe": {
+  "beta": 0.16088271507724,
+  "t": 1.204087968355054,
+  "n": 63,
+  "df_resid": 47,
+  "partial_r": 0.17298645457453973,
+  "p": 0.23995200959808038,
+  "ci": [
+   -0.3848011490595368,
+   0.8679485410081693
+  ]
+ },
+ "H2_fe_task": {
+  "beta": -0.007972193644108939,
+  "t": -0.22607703237539958,
+  "n": 504,
+  "df_resid": 391,
+  "partial_r": -0.011432459769472242,
+  "p": 0.8248350329934013,
+  "ci": [
+   -0.1278565519321657,
+   0.1212805567409592
+  ]
+ },
+ "threshold_sensitivity": {
+  "n_thresholds": 11,
+  "n_significant": 9,
+  "same_direction": 11
+ },
+ "H2_glmm": {
+  "ok": true,
+  "beta": 0.37807700844874775,
+  "sd": 0.07035636047757093,
+  "lo": 0.24017854191270874,
+  "hi": 0.5159754749847868,
+  "re_sd": {
+   "model": 0.729924674469385,
+   "task": 1.4541531563529988,
+   "cwe": 2.78228684288512
+  },
+  "n": 2520,
+  "method": "statsmodels BinomialBayesMixedGLM.fit_vb"
+ },
+ "contrasts": [
+  {
+   "outcome": "vulnerable",
+   "contrast": "reminder - baseline",
+   "label": "H3  generic security reminder",
+   "risk_difference": -0.13253968253968257,
+   "ci_lo": -0.19564484126984125,
+   "ci_hi": -0.07698412698412697,
+   "p_model_signflip": 0.00390625,
+   "models_improved": 9,
+   "n_models": 9,
+   "p_holm": 0.03515625
+  },
+  {
+   "outcome": "vulnerable",
+   "contrast": "ctx_irrelevant - baseline",
+   "label": "ctrl irrelevant security notes",
+   "risk_difference": -0.03333333333333333,
+   "ci_lo": -0.06389880952380951,
+   "ci_hi": -0.0015873015873015834,
+   "p_model_signflip": 0.0078125,
+   "models_improved": 8,
+   "n_models": 9,
+   "p_holm": 0.0390625
+  },
+  {
+   "outcome": "vulnerable",
+   "contrast": "rag_dense - baseline",
+   "label": "H4  dense RAG, mixed corpus",
+   "risk_difference": -0.07182539682539683,
+   "ci_lo": -0.12301587301587301,
+   "ci_hi": -0.02619047619047619,
+   "p_model_signflip": 0.00390625,
+   "models_improved": 9,
+   "n_models": 9,
+   "p_holm": 0.03515625
+  },
+  {
+   "outcome": "vulnerable",
+   "contrast": "rag_hybrid - baseline",
+   "label": "H4  hybrid RAG, mixed corpus",
+   "risk_difference": -0.06111111111111111,
+   "ci_lo": -0.10238095238095238,
+   "ci_hi": -0.023412698412698413,
+   "p_model_signflip": 0.0078125,
+   "models_improved": 8,
+   "n_models": 9,
+   "p_holm": 0.0390625
+  },
+  {
+   "outcome": "vulnerable",
+   "contrast": "rag_oracle - baseline",
+   "label": "ref  oracle RAG (target-CWE notes)",
+   "risk_difference": -0.08214285714285714,
+   "ci_lo": -0.14404761904761904,
+   "ci_hi": -0.022212301587301638,
+   "p_model_signflip": 0.00390625,
+   "models_improved": 9,
+   "n_models": 9,
+   "p_holm": 0.03515625
+  },
+  {
+   "outcome": "vulnerable",
+   "contrast": "rag_dense - reminder",
+   "label": "H4b dense RAG beyond a reminder",
+   "risk_difference": 0.060714285714285714,
+   "ci_lo": 0.02142857142857143,
+   "ci_hi": 0.10515873015873016,
+   "p_model_signflip": 0.00390625,
+   "models_improved": 0,
+   "n_models": 9,
+   "p_holm": 0.03515625
+  },
+  {
+   "outcome": "vulnerable",
+   "contrast": "rag_dense - ctx_irrelevant",
+   "label": "H4c dense RAG beyond irrelevant notes",
+   "risk_difference": -0.03849206349206349,
+   "ci_lo": -0.08691468253968251,
+   "ci_hi": 0.007936507936507936,
+   "p_model_signflip": 0.046875,
+   "models_improved": 6,
+   "n_models": 9,
+   "p_holm": 0.1171875
+  },
+  {
+   "outcome": "vulnerable",
+   "contrast": "rag_hybrid - ctx_irrelevant",
+   "label": "H4c hybrid RAG beyond irrelevant notes",
+   "risk_difference": -0.027777777777777776,
+   "ci_lo": -0.073015873015873,
+   "ci_hi": 0.009126984126984126,
+   "p_model_signflip": 0.0390625,
+   "models_improved": 7,
+   "n_models": 9,
+   "p_holm": 0.1171875
+  },
+  {
+   "outcome": "vulnerable",
+   "contrast": "rag_hybrid - rag_dense",
+   "label": "H5  hybrid vs dense",
+   "risk_difference": 0.010714285714285713,
+   "ci_lo": -0.01984126984126984,
+   "ci_hi": 0.040089285714285654,
+   "p_model_signflip": 0.1640625,
+   "models_improved": 2,
+   "n_models": 9,
+   "p_holm": 0.1640625
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "reminder - baseline",
+   "label": "H3  generic security reminder",
+   "risk_difference": 0.01865079365079365,
+   "ci_lo": -0.03770833333333332,
+   "ci_hi": 0.07777777777777778,
+   "p_model_signflip": 0.18359375,
+   "models_improved": 7,
+   "n_models": 9,
+   "p_holm": 1.0
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "ctx_irrelevant - baseline",
+   "label": "ctrl irrelevant security notes",
+   "risk_difference": 0.015476190476190475,
+   "ci_lo": -0.02223214285714284,
+   "ci_hi": 0.05079365079365079,
+   "p_model_signflip": 0.20703125,
+   "models_improved": 6,
+   "n_models": 9,
+   "p_holm": 1.0
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "rag_dense - baseline",
+   "label": "H4  dense RAG, mixed corpus",
+   "risk_difference": 0.009523809523809525,
+   "ci_lo": -0.03373015873015872,
+   "ci_hi": 0.05238095238095238,
+   "p_model_signflip": 0.484375,
+   "models_improved": 5,
+   "n_models": 9,
+   "p_holm": 1.0
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "rag_hybrid - baseline",
+   "label": "H4  hybrid RAG, mixed corpus",
+   "risk_difference": -0.005158730158730159,
+   "ci_lo": -0.051597222222222204,
+   "ci_hi": 0.04128968253968243,
+   "p_model_signflip": 0.6796875,
+   "models_improved": 4,
+   "n_models": 9,
+   "p_holm": 1.0
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "rag_oracle - baseline",
+   "label": "ref  oracle RAG (target-CWE notes)",
+   "risk_difference": 0.024603174603174603,
+   "ci_lo": -0.027787698412698403,
+   "ci_hi": 0.08016865079365075,
+   "p_model_signflip": 0.1953125,
+   "models_improved": 6,
+   "n_models": 9,
+   "p_holm": 1.0
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "rag_dense - reminder",
+   "label": "H4b dense RAG beyond a reminder",
+   "risk_difference": -0.009126984126984131,
+   "ci_lo": -0.05080357142857141,
+   "ci_hi": 0.033333333333333326,
+   "p_model_signflip": 0.37890625,
+   "models_improved": 2,
+   "n_models": 9,
+   "p_holm": 1.0
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "rag_dense - ctx_irrelevant",
+   "label": "H4c dense RAG beyond irrelevant notes",
+   "risk_difference": -0.005952380952380951,
+   "ci_lo": -0.04801587301587301,
+   "ci_hi": 0.03889880952380947,
+   "p_model_signflip": 0.5078125,
+   "models_improved": 3,
+   "n_models": 9,
+   "p_holm": 1.0
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "rag_hybrid - ctx_irrelevant",
+   "label": "H4c hybrid RAG beyond irrelevant notes",
+   "risk_difference": -0.02063492063492063,
+   "ci_lo": -0.06627976190476188,
+   "ci_hi": 0.02658730158730159,
+   "p_model_signflip": 0.08203125,
+   "models_improved": 2,
+   "n_models": 9,
+   "p_holm": 0.73828125
+  },
+  {
+   "outcome": "secure_pass",
+   "contrast": "rag_hybrid - rag_dense",
+   "label": "H5  hybrid vs dense",
+   "risk_difference": -0.014682539682539682,
+   "ci_lo": -0.04802579365079364,
+   "ci_hi": 0.016666666666666666,
+   "p_model_signflip": 0.1015625,
+   "models_improved": 2,
+   "n_models": 9,
+   "p_holm": 0.8125
+  },
+  {
+   "outcome": "functional",
+   "contrast": "reminder - baseline",
+   "label": "H3  generic security reminder",
+   "risk_difference": -0.13214285714285715,
+   "ci_lo": -0.18969246031746032,
+   "ci_hi": -0.08252976190476195,
+   "p_model_signflip": 0.00390625,
+   "models_improved": 0,
+   "n_models": 9,
+   "p_holm": 0.03515625
+  },
+  {
+   "outcome": "functional",
+   "contrast": "ctx_irrelevant - baseline",
+   "label": "ctrl irrelevant security notes",
+   "risk_difference": -0.02301587301587301,
+   "ci_lo": -0.0611111111111111,
+   "ci_hi": 0.013888888888888885,
+   "p_model_signflip": 0.1171875,
+   "models_improved": 2,
+   "n_models": 9,
+   "p_holm": 0.1796875
+  },
+  {
+   "outcome": "functional",
+   "contrast": "rag_dense - baseline",
+   "label": "H4  dense RAG, mixed corpus",
+   "risk_difference": -0.0630952380952381,
+   "ci_lo": -0.1111111111111111,
+   "ci_hi": -0.020238095238095236,
+   "p_model_signflip": 0.00390625,
+   "models_improved": 0,
+   "n_models": 9,
+   "p_holm": 0.03515625
+  },
+  {
+   "outcome": "functional",
+   "contrast": "rag_hybrid - baseline",
+   "label": "H4  hybrid RAG, mixed corpus",
+   "risk_difference": -0.07896825396825397,
+   "ci_lo": -0.12222222222222222,
+   "ci_hi": -0.04206349206349206,
+   "p_model_signflip": 0.00390625,
+   "models_improved": 0,
+   "n_models": 9,
+   "p_holm": 0.03515625
+  },
+  {
+   "outcome": "functional",
+   "contrast": "rag_oracle - baseline",
+   "label": "ref  oracle RAG (target-CWE notes)",
+   "risk_difference": -0.06746031746031746,
+   "ci_lo": -0.11747023809523807,
+   "ci_hi": -0.025,
+   "p_model_signflip": 0.00390625,
+   "models_improved": 0,
+   "n_models": 9,
+   "p_holm": 0.03515625
+  },
+  {
+   "outcome": "functional",
+   "contrast": "rag_dense - reminder",
+   "label": "H4b dense RAG beyond a reminder",
+   "risk_difference": 0.06904761904761904,
+   "ci_lo": 0.01825396825396825,
+   "ci_hi": 0.12261904761904761,
+   "p_model_signflip": 0.0078125,
+   "models_improved": 8,
+   "n_models": 9,
+   "p_holm": 0.0390625
+  },
+  {
+   "outcome": "functional",
+   "contrast": "rag_dense - ctx_irrelevant",
+   "label": "H4c dense RAG beyond irrelevant notes",
+   "risk_difference": -0.04007936507936507,
+   "ci_lo": -0.09722222222222222,
+   "ci_hi": 0.013501984126984076,
+   "p_model_signflip": 0.08984375,
+   "models_improved": 3,
+   "n_models": 9,
+   "p_holm": 0.1796875
+  },
+  {
+   "outcome": "functional",
+   "contrast": "rag_hybrid - ctx_irrelevant",
+   "label": "H4c hybrid RAG beyond irrelevant notes",
+   "risk_difference": -0.055952380952380955,
+   "ci_lo": -0.10674603174603174,
+   "ci_hi": -0.009126984126984122,
+   "p_model_signflip": 0.0234375,
+   "models_improved": 1,
+   "n_models": 9,
+   "p_holm": 0.09375
+  },
+  {
+   "outcome": "functional",
+   "contrast": "rag_hybrid - rag_dense",
+   "label": "H5  hybrid vs dense",
+   "risk_difference": -0.015873015873015872,
+   "ci_lo": -0.055962301587301574,
+   "ci_hi": 0.020248015873015824,
+   "p_model_signflip": 0.04296875,
+   "models_improved": 2,
+   "n_models": 9,
+   "p_holm": 0.12890625
+  }
+ ],
+ "H3_activation": {
+  "beta": 0.0005696921365309844,
+  "t": 0.01421534418260714,
+  "n": 504,
+  "df_resid": 391,
+  "partial_r": 0.0007189006700405325,
+  "p": 0.9892021595680864,
+  "ci": [
+   -0.15390942470292993,
+   0.13425868042820863
+  ],
+  "effect_recognised": -0.11851851851851852,
+  "effect_not_recognised": -0.13636363636363638
+ },
+ "retrieval_quality": {
+  "ctx_irrelevant": {
+   "hit_at_k": 0.0,
+   "precision_at_k": 0.0
+  },
+  "rag_dense": {
+   "hit_at_k": 0.3571,
+   "precision_at_k": 0.1726
+  },
+  "rag_hybrid": {
+   "hit_at_k": 0.3929,
+   "precision_at_k": 0.1964
+  },
+  "rag_oracle": {
+   "hit_at_k": 1.0,
+   "precision_at_k": 1.0
+  }
+ },
+ "scorer": {
+  "vulnerable": {
+   "kind": "vulnerable",
+   "scorer": "claude-opus-5-5",
+   "instructions_sha": "1a8afe05861cd059",
+   "items": 140,
+   "rated": {
+    "pass1": 140
+   },
+   "unrated": [],
+   "automatic_vs_scorer": {
+    "n": 140,
+    "tp": 66,
+    "fp": 4,
+    "fn": 10,
+    "tn": 60,
+    "agreement": 0.9,
+    "precision": 0.9428571428571428,
+    "recall": 0.868421052631579,
+    "kappa": 0.8,
+    "note": "the sample is stratified by automatic verdict, so precision is unbiased but recall is not a population estimate"
+   },
+   "by_cwe": {
+    "CWE-89": {
+     "n": 20,
+     "tp": 10,
+     "fp": 0,
+     "fn": 0,
+     "tn": 10,
+     "agreement": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "kappa": 1.0
+    },
+    "CWE-79": {
+     "n": 20,
+     "tp": 9,
+     "fp": 1,
+     "fn": 2,
+     "tn": 8,
+     "agreement": 0.85,
+     "precision": 0.9,
+     "recall": 0.8181818181818182,
+     "kappa": 0.7
+    },
+    "CWE-22": {
+     "n": 20,
+     "tp": 10,
+     "fp": 0,
+     "fn": 4,
+     "tn": 6,
+     "agreement": 0.8,
+     "precision": 1.0,
+     "recall": 0.7142857142857143,
+     "kappa": 0.6000000000000001
+    },
+    "CWE-78": {
+     "n": 20,
+     "tp": 10,
+     "fp": 0,
+     "fn": 0,
+     "tn": 10,
+     "agreement": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "kappa": 1.0
+    },
+    "CWE-502": {
+     "n": 20,
+     "tp": 10,
+     "fp": 0,
+     "fn": 0,
+     "tn": 10,
+     "agreement": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "kappa": 1.0
+    },
+    "CWE-798": {
+     "n": 20,
+     "tp": 10,
+     "fp": 0,
+     "fn": 3,
+     "tn": 7,
+     "agreement": 0.85,
+     "precision": 1.0,
+     "recall": 0.7692307692307693,
+     "kappa": 0.7
+    },
+    "CWE-120": {
+     "n": 20,
+     "tp": 7,
+     "fp": 3,
+     "fn": 1,
+     "tn": 9,
+     "agreement": 0.8,
+     "precision": 0.7,
+     "recall": 0.875,
+     "kappa": 0.6000000000000001
+    }
+   }
+  },
+  "explain": {
+   "kind": "explain",
+   "scorer": "claude-opus-5-5",
+   "instructions_sha": "1a8afe05861cd059",
+   "items": 63,
+   "rated": {
+    "pass1": 63
+   },
+   "unrated": [],
+   "rubric_vs_scorer": {
+    "n": 63,
+    "spearman_rho": 0.12078732454842606,
+    "p": 0.3155368926214757
+   },
+   "mean_score_0_to_1": 0.8412698412698413
+  }
+ }
+}

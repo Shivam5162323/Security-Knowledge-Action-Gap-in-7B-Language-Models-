@@ -1,0 +1,10 @@
+model,tag,params_B,params_served,tier,quantisation,reasoning,digest,generations,expected,no_code,refusals,truncated,syntax_errors
+Mistral-7B-v0.3,mistral:7b-instruct-v0.3-q4_K_M,7.2,7.2B,7b,Q4_K_M,none,6577803aa9a0,1680,1680,0,0,6,13
+Qwen3.5-4B,qwen3.5:4b-q4_K_M,4.0,4.2B,small,Q4_K_M,disabled,d8b0f5e9760c,1680,1680,0,0,120,84
+Llama-3.2-3B,llama3.2:3b-instruct-q4_K_M,3.2,3.2B,small,Q4_K_M,none,a80c4f17acd5,1680,1680,3,3,3,10
+Qwen2.5-Coder-3B,qwen2.5-coder:3b-instruct-q4_K_M,3.1,3.1B,small,Q4_K_M,none,f72c60cabf62,1680,1680,0,0,0,1
+Qwen2.5-Coder-7B,qwen2.5-coder:7b-instruct-q4_K_M,7.6,7.6B,7b,Q4_K_M,none,dae161e27b0e,1680,1680,0,0,1,0
+OLMo-3-7B,olmo-3:7b-instruct-q4_K_M,7.0,7.3B,7b,Q4_K_M,none,ea72df8c85d7,1680,1680,0,0,77,86
+Qwen3-4B,qwen3:4b-instruct-2507-q4_K_M,4.0,4.0B,small,Q4_K_M,disabled,0edcdef34593,1680,1680,0,0,34,53
+Phi-4-mini-3.8B,phi4-mini:3.8b-q4_K_M,3.8,3.8B,small,Q4_K_M,none,78fad5d182a7,1680,1680,0,0,0,2
+Qwen3.5-2B,qwen3.5:2b-q4_K_M,2.0,1.9B,small,Q4_K_M,disabled,1e2d21a4f03a,1680,1680,0,0,228,183

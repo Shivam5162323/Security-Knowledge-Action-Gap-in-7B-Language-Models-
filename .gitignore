@@ -1,0 +1,34 @@
+# Manuscript and submission files: kept out of the repository
+*.docx
+*.doc
+~$*
+/7B_Journal_paper*
+/tools/manuscript/*
+!/tools/manuscript/paper_extra.py
+!/tools/manuscript/paper_data.py
+/docs/revision_notes.md
+
+# Superseded pipeline, kept locally only
+/legacy/
+
+# Archives and bundles (rebuild with `python -m skgap bundle`)
+*.zip
+
+# Script written by an earlier version of `analyze`; replaced by glmm_exact.R
+/runs/*/analysis/glmm.R
+
+# Credentials: never commit
+.env
+*.env
+kaggle.json
+access_token*
+*.pem
+*.key
+
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/

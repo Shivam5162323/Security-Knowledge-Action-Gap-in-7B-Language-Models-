@@ -1,0 +1,51 @@
+# CWE-22: data from a function parameter or the HTTP request reaches a file-system
+# call without the path being reduced to a base name or canonicalised first.
+# Canonicalisation is treated as sanitising; whether the result is then compared
+# with the base directory is checked by the dynamic attack test, not by this rule.
+rules:
+  - id: skgap-cwe22-path-traversal
+    languages: [python]
+    severity: ERROR
+    message: "CWE-22: untrusted input is used in a file path without basename/realpath handling"
+    metadata: {cwe: CWE-22}
+    mode: taint
+    pattern-sources:
+      - patterns:
+          - pattern: |
+              def $F(..., $P, ...):
+                  ...
+          - focus-metavariable: $P
+      - pattern-either:
+          - pattern: request.args
+          - pattern: request.form
+          - pattern: request.values
+          - pattern: request.json
+          - pattern: request.get_json(...)
+    pattern-sanitizers:
+      - pattern-either:
+          - pattern: os.path.basename(...)
+          - pattern: os.path.realpath(...)
+          - pattern: os.path.abspath(...)
+          - pattern: secure_filename(...)
+          - pattern: safe_join(...)
+          - pattern: send_from_directory(...)
+          - pattern: $X.resolve(...)
+          - pattern: $X.name
+          - pattern: int(...)
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: open($X, ...)
+              - pattern: io.open($X, ...)
+              - pattern: codecs.open($X, ...)
+              - pattern: send_file($X, ...)
+              - pattern: os.remove($X)
+              - pattern: os.unlink($X)
+              - pattern: shutil.rmtree($X, ...)
+              - pattern: $X.read_text(...)
+              - pattern: $X.read_bytes(...)
+              - pattern: $X.write_text(...)
+              - pattern: $X.write_bytes(...)
+              - pattern: $X.unlink(...)
+              - pattern: $X.open(...)
+          - focus-metavariable: $X

@@ -1,0 +1,14 @@
+# Core (generation, evaluation, analysis)
+numpy>=1.26
+pandas>=2.1
+requests>=2.31
+matplotlib>=3.8
+semgrep>=1.90          # static detection
+flask>=3.0             # the Flask tasks' functional and attack tests
+pyyaml>=6.0            # CWE-502 YAML task
+statsmodels>=0.14      # mixed-effects logistic regression in the report
+pytest>=8.0
+
+# Optional
+# huggingface_hub      # automatic backup of a run to a private Hub dataset (HF_TOKEN + SKGAP_HF_REPO)
+# sentence-transformers  # only to REBUILD data/retrieval.json; the shipped cache needs nothing

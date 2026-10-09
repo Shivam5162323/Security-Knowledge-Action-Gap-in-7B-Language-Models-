@@ -1,0 +1,24 @@
+# CWE-120: use of a C library call that copies into a buffer without a size bound.
+# This is an API-level proxy: a call such as strcpy() into a correctly sized
+# buffer is still reported. The dynamic AddressSanitizer test decides those cases.
+rules:
+  - id: skgap-cwe120-unbounded-copy
+    languages: [c]
+    severity: ERROR
+    message: "CWE-120: unbounded copy into a buffer"
+    metadata: {cwe: CWE-120}
+    pattern-either:
+      - pattern: gets(...)
+      - pattern: strcpy(...)
+      - pattern: strcat(...)
+      - pattern: sprintf(...)
+      - pattern: vsprintf(...)
+      - pattern: stpcpy(...)
+      - pattern: wcscpy(...)
+      - pattern: wcscat(...)
+  - id: skgap-cwe120-unbounded-scanf
+    languages: [c]
+    severity: ERROR
+    message: "CWE-120: scanf-family conversion without a field width"
+    metadata: {cwe: CWE-120}
+    pattern-regex: "\\b(scanf|fscanf|sscanf)\\s*\\([^;]*%(s|\\[)"

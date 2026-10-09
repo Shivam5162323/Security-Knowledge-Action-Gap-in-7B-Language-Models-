@@ -1,0 +1,317 @@
+{
+ "A0055": {
+  "key": "mistral:7b-instruct-v0.3-q4_K_M|explain|CWE-89",
+  "auto": 0.75,
+  "cwe": "CWE-89"
+ },
+ "A0028": {
+  "key": "mistral:7b-instruct-v0.3-q4_K_M|explain|CWE-79",
+  "auto": 1.0,
+  "cwe": "CWE-79"
+ },
+ "A0038": {
+  "key": "mistral:7b-instruct-v0.3-q4_K_M|explain|CWE-78",
+  "auto": 0.75,
+  "cwe": "CWE-78"
+ },
+ "A0004": {
+  "key": "mistral:7b-instruct-v0.3-q4_K_M|explain|CWE-22",
+  "auto": 1.0,
+  "cwe": "CWE-22"
+ },
+ "A0020": {
+  "key": "mistral:7b-instruct-v0.3-q4_K_M|explain|CWE-502",
+  "auto": 1.0,
+  "cwe": "CWE-502"
+ },
+ "A0054": {
+  "key": "mistral:7b-instruct-v0.3-q4_K_M|explain|CWE-120",
+  "auto": 0.75,
+  "cwe": "CWE-120"
+ },
+ "A0060": {
+  "key": "mistral:7b-instruct-v0.3-q4_K_M|explain|CWE-798",
+  "auto": 0.75,
+  "cwe": "CWE-798"
+ },
+ "A0039": {
+  "key": "qwen3.5:4b-q4_K_M|explain|CWE-89",
+  "auto": 0.75,
+  "cwe": "CWE-89"
+ },
+ "A0015": {
+  "key": "qwen3.5:4b-q4_K_M|explain|CWE-79",
+  "auto": 1.0,
+  "cwe": "CWE-79"
+ },
+ "A0049": {
+  "key": "qwen3.5:4b-q4_K_M|explain|CWE-22",
+  "auto": 1.0,
+  "cwe": "CWE-22"
+ },
+ "A0035": {
+  "key": "qwen3.5:4b-q4_K_M|explain|CWE-78",
+  "auto": 0.75,
+  "cwe": "CWE-78"
+ },
+ "A0050": {
+  "key": "qwen3.5:4b-q4_K_M|explain|CWE-502",
+  "auto": 0.75,
+  "cwe": "CWE-502"
+ },
+ "A0005": {
+  "key": "qwen3.5:4b-q4_K_M|explain|CWE-798",
+  "auto": 1.0,
+  "cwe": "CWE-798"
+ },
+ "A0046": {
+  "key": "qwen3.5:4b-q4_K_M|explain|CWE-120",
+  "auto": 0.75,
+  "cwe": "CWE-120"
+ },
+ "A0058": {
+  "key": "llama3.2:3b-instruct-q4_K_M|explain|CWE-22",
+  "auto": 0.25,
+  "cwe": "CWE-22"
+ },
+ "A0044": {
+  "key": "llama3.2:3b-instruct-q4_K_M|explain|CWE-78",
+  "auto": 0.5,
+  "cwe": "CWE-78"
+ },
+ "A0036": {
+  "key": "llama3.2:3b-instruct-q4_K_M|explain|CWE-89",
+  "auto": 0.75,
+  "cwe": "CWE-89"
+ },
+ "A0031": {
+  "key": "llama3.2:3b-instruct-q4_K_M|explain|CWE-79",
+  "auto": 0.75,
+  "cwe": "CWE-79"
+ },
+ "A0033": {
+  "key": "llama3.2:3b-instruct-q4_K_M|explain|CWE-502",
+  "auto": 0.75,
+  "cwe": "CWE-502"
+ },
+ "A0030": {
+  "key": "llama3.2:3b-instruct-q4_K_M|explain|CWE-798",
+  "auto": 0.5,
+  "cwe": "CWE-798"
+ },
+ "A0041": {
+  "key": "llama3.2:3b-instruct-q4_K_M|explain|CWE-120",
+  "auto": 0.75,
+  "cwe": "CWE-120"
+ },
+ "A0053": {
+  "key": "qwen2.5-coder:3b-instruct-q4_K_M|explain|CWE-89",
+  "auto": 0.75,
+  "cwe": "CWE-89"
+ },
+ "A0018": {
+  "key": "qwen2.5-coder:3b-instruct-q4_K_M|explain|CWE-78",
+  "auto": 0.75,
+  "cwe": "CWE-78"
+ },
+ "A0013": {
+  "key": "qwen2.5-coder:3b-instruct-q4_K_M|explain|CWE-79",
+  "auto": 0.5,
+  "cwe": "CWE-79"
+ },
+ "A0026": {
+  "key": "qwen2.5-coder:3b-instruct-q4_K_M|explain|CWE-22",
+  "auto": 0.25,
+  "cwe": "CWE-22"
+ },
+ "A0037": {
+  "key": "qwen2.5-coder:3b-instruct-q4_K_M|explain|CWE-502",
+  "auto": 0.75,
+  "cwe": "CWE-502"
+ },
+ "A0029": {
+  "key": "qwen2.5-coder:3b-instruct-q4_K_M|explain|CWE-798",
+  "auto": 0.5,
+  "cwe": "CWE-798"
+ },
+ "A0040": {
+  "key": "qwen2.5-coder:3b-instruct-q4_K_M|explain|CWE-120",
+  "auto": 1.0,
+  "cwe": "CWE-120"
+ },
+ "A0027": {
+  "key": "qwen2.5-coder:7b-instruct-q4_K_M|explain|CWE-89",
+  "auto": 0.5,
+  "cwe": "CWE-89"
+ },
+ "A0010": {
+  "key": "qwen2.5-coder:7b-instruct-q4_K_M|explain|CWE-22",
+  "auto": 0.75,
+  "cwe": "CWE-22"
+ },
+ "A0025": {
+  "key": "qwen2.5-coder:7b-instruct-q4_K_M|explain|CWE-78",
+  "auto": 1.0,
+  "cwe": "CWE-78"
+ },
+ "A0043": {
+  "key": "qwen2.5-coder:7b-instruct-q4_K_M|explain|CWE-502",
+  "auto": 1.0,
+  "cwe": "CWE-502"
+ },
+ "A0052": {
+  "key": "qwen2.5-coder:7b-instruct-q4_K_M|explain|CWE-798",
+  "auto": 0.5,
+  "cwe": "CWE-798"
+ },
+ "A0012": {
+  "key": "qwen2.5-coder:7b-instruct-q4_K_M|explain|CWE-79",
+  "auto": 0.75,
+  "cwe": "CWE-79"
+ },
+ "A0057": {
+  "key": "qwen2.5-coder:7b-instruct-q4_K_M|explain|CWE-120",
+  "auto": 0.75,
+  "cwe": "CWE-120"
+ },
+ "A0009": {
+  "key": "olmo-3:7b-instruct-q4_K_M|explain|CWE-89",
+  "auto": 0.75,
+  "cwe": "CWE-89"
+ },
+ "A0059": {
+  "key": "olmo-3:7b-instruct-q4_K_M|explain|CWE-22",
+  "auto": 1.0,
+  "cwe": "CWE-22"
+ },
+ "A0042": {
+  "key": "olmo-3:7b-instruct-q4_K_M|explain|CWE-79",
+  "auto": 0.5,
+  "cwe": "CWE-79"
+ },
+ "A0034": {
+  "key": "olmo-3:7b-instruct-q4_K_M|explain|CWE-78",
+  "auto": 0.75,
+  "cwe": "CWE-78"
+ },
+ "A0022": {
+  "key": "olmo-3:7b-instruct-q4_K_M|explain|CWE-798",
+  "auto": 0.5,
+  "cwe": "CWE-798"
+ },
+ "A0047": {
+  "key": "olmo-3:7b-instruct-q4_K_M|explain|CWE-120",
+  "auto": 0.75,
+  "cwe": "CWE-120"
+ },
+ "A0014": {
+  "key": "olmo-3:7b-instruct-q4_K_M|explain|CWE-502",
+  "auto": 0.75,
+  "cwe": "CWE-502"
+ },
+ "A0021": {
+  "key": "qwen3:4b-instruct-2507-q4_K_M|explain|CWE-79",
+  "auto": 0.75,
+  "cwe": "CWE-79"
+ },
+ "A0023": {
+  "key": "qwen3:4b-instruct-2507-q4_K_M|explain|CWE-89",
+  "auto": 1.0,
+  "cwe": "CWE-89"
+ },
+ "A0048": {
+  "key": "qwen3:4b-instruct-2507-q4_K_M|explain|CWE-78",
+  "auto": 0.75,
+  "cwe": "CWE-78"
+ },
+ "A0008": {
+  "key": "qwen3:4b-instruct-2507-q4_K_M|explain|CWE-22",
+  "auto": 0.5,
+  "cwe": "CWE-22"
+ },
+ "A0051": {
+  "key": "qwen3:4b-instruct-2507-q4_K_M|explain|CWE-798",
+  "auto": 0.75,
+  "cwe": "CWE-798"
+ },
+ "A0017": {
+  "key": "qwen3:4b-instruct-2507-q4_K_M|explain|CWE-502",
+  "auto": 1.0,
+  "cwe": "CWE-502"
+ },
+ "A0016": {
+  "key": "qwen3:4b-instruct-2507-q4_K_M|explain|CWE-120",
+  "auto": 0.75,
+  "cwe": "CWE-120"
+ },
+ "A0062": {
+  "key": "phi4-mini:3.8b-q4_K_M|explain|CWE-22",
+  "auto": 0.75,
+  "cwe": "CWE-22"
+ },
+ "A0007": {
+  "key": "phi4-mini:3.8b-q4_K_M|explain|CWE-89",
+  "auto": 0.75,
+  "cwe": "CWE-89"
+ },
+ "A0032": {
+  "key": "phi4-mini:3.8b-q4_K_M|explain|CWE-79",
+  "auto": 0.5,
+  "cwe": "CWE-79"
+ },
+ "A0011": {
+  "key": "phi4-mini:3.8b-q4_K_M|explain|CWE-78",
+  "auto": 1.0,
+  "cwe": "CWE-78"
+ },
+ "A0001": {
+  "key": "phi4-mini:3.8b-q4_K_M|explain|CWE-502",
+  "auto": 1.0,
+  "cwe": "CWE-502"
+ },
+ "A0045": {
+  "key": "phi4-mini:3.8b-q4_K_M|explain|CWE-120",
+  "auto": 0.75,
+  "cwe": "CWE-120"
+ },
+ "A0024": {
+  "key": "phi4-mini:3.8b-q4_K_M|explain|CWE-798",
+  "auto": 0.5,
+  "cwe": "CWE-798"
+ },
+ "A0003": {
+  "key": "qwen3.5:2b-q4_K_M|explain|CWE-89",
+  "auto": 0.75,
+  "cwe": "CWE-89"
+ },
+ "A0056": {
+  "key": "qwen3.5:2b-q4_K_M|explain|CWE-79",
+  "auto": 0.75,
+  "cwe": "CWE-79"
+ },
+ "A0006": {
+  "key": "qwen3.5:2b-q4_K_M|explain|CWE-22",
+  "auto": 0.5,
+  "cwe": "CWE-22"
+ },
+ "A0061": {
+  "key": "qwen3.5:2b-q4_K_M|explain|CWE-78",
+  "auto": 0.75,
+  "cwe": "CWE-78"
+ },
+ "A0019": {
+  "key": "qwen3.5:2b-q4_K_M|explain|CWE-502",
+  "auto": 0.75,
+  "cwe": "CWE-502"
+ },
+ "A0000": {
+  "key": "qwen3.5:2b-q4_K_M|explain|CWE-798",
+  "auto": 0.75,
+  "cwe": "CWE-798"
+ },
+ "A0002": {
+  "key": "qwen3.5:2b-q4_K_M|explain|CWE-120",
+  "auto": 0.75,
+  "cwe": "CWE-120"
+ }
+}

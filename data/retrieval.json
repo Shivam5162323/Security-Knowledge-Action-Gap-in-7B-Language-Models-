@@ -1,0 +1,5949 @@
+{
+ "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+ "corpus_sha": "41469a6dd3137bfc99552330b9a25ad562f74ef934a728f39460ea31413d918f",
+ "n_docs": 1845,
+ "top_k": 3,
+ "rrf": {
+  "k": 60,
+  "w_dense": 0.6,
+  "w_bm25": 0.4
+ },
+ "tasks": {
+  "CWE89-01": {
+   "rag_dense": [
+    {
+     "id": "CWE-862",
+     "cwe": "CWE-862",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CWE-619",
+     "cwe": "CWE-619",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 85
+    },
+    {
+     "id": "CWE-566",
+     "cwe": "CWE-566",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 15
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-862",
+     "cwe": "CWE-862",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CWE-566",
+     "cwe": "CWE-566",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 15
+    },
+    {
+     "id": "CWE-863",
+     "cwe": "CWE-863",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 13
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-564",
+     "cwe": "CWE-564",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 6,
+     "bm25_rank": 33
+    },
+    {
+     "id": "CWE-89",
+     "cwe": "CWE-89",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 12,
+     "bm25_rank": 42
+    },
+    {
+     "id": "CVE-2020-26625",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 14,
+     "bm25_rank": 1552
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1319",
+     "cwe": "CWE-1319",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 735,
+     "bm25_rank": 682
+    },
+    {
+     "id": "CWE-1326",
+     "cwe": "CWE-1326",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 964,
+     "bm25_rank": 1376
+    },
+    {
+     "id": "CWE-790",
+     "cwe": "CWE-790",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1449,
+     "bm25_rank": 1517
+    }
+   ]
+  },
+  "CWE89-02": {
+   "rag_dense": [
+    {
+     "id": "CWE-486",
+     "cwe": "CWE-486",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 28
+    },
+    {
+     "id": "CWE-621",
+     "cwe": "CWE-621",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 899
+    },
+    {
+     "id": "CWE-1089",
+     "cwe": "CWE-1089",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 12
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-1067",
+     "cwe": "CWE-1067",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 8,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-1089",
+     "cwe": "CWE-1089",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 12
+    },
+    {
+     "id": "CWE-566",
+     "cwe": "CWE-566",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 11,
+     "bm25_rank": 5
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-943",
+     "cwe": "CWE-943",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 14,
+     "bm25_rank": 317
+    },
+    {
+     "id": "CWE-89",
+     "cwe": "CWE-89",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 30,
+     "bm25_rank": 46
+    },
+    {
+     "id": "CVE-2023-50027",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 59,
+     "bm25_rank": 1389
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-305",
+     "cwe": "CWE-305",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1322,
+     "bm25_rank": 1328
+    },
+    {
+     "id": "CWE-1269",
+     "cwe": "CWE-1269",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 336,
+     "bm25_rank": 1178
+    },
+    {
+     "id": "CWE-494",
+     "cwe": "CWE-494",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 957,
+     "bm25_rank": 95
+    }
+   ]
+  },
+  "CWE89-03": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-6152",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 20
+    },
+    {
+     "id": "CVE-2024-0235",
+     "cwe": "CWE-862",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 64
+    },
+    {
+     "id": "CVE-2023-26562",
+     "cwe": "CWE-862",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 1671
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-566",
+     "cwe": "CWE-566",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CVE-2023-6152",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 20
+    },
+    {
+     "id": "CWE-640",
+     "cwe": "CWE-640",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 24
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2020-26625",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 8,
+     "bm25_rank": 1553
+    },
+    {
+     "id": "CWE-564",
+     "cwe": "CWE-564",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 13,
+     "bm25_rank": 25
+    },
+    {
+     "id": "CWE-89",
+     "cwe": "CWE-89",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 17,
+     "bm25_rank": 42
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1224",
+     "cwe": "CWE-1224",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1700,
+     "bm25_rank": 327
+    },
+    {
+     "id": "CWE-1246",
+     "cwe": "CWE-1246",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1054,
+     "bm25_rank": 306
+    },
+    {
+     "id": "CWE-178",
+     "cwe": "CWE-178",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 556,
+     "bm25_rank": 509
+    }
+   ]
+  },
+  "CWE89-04": {
+   "rag_dense": [
+    {
+     "id": "CWE-943",
+     "cwe": "CWE-943",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 130
+    },
+    {
+     "id": "CVE-2024-24761",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 801
+    },
+    {
+     "id": "CVE-2024-25628",
+     "cwe": "CWE-613",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 1824
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-1049",
+     "cwe": "CWE-1049",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-1073",
+     "cwe": "CWE-1073",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 11,
+     "bm25_rank": 4
+    },
+    {
+     "id": "CWE-566",
+     "cwe": "CWE-566",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 25,
+     "bm25_rank": 9
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-943",
+     "cwe": "CWE-943",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 130
+    },
+    {
+     "id": "CVE-2020-26630",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 413
+    },
+    {
+     "id": "CVE-2020-26627",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 10,
+     "bm25_rank": 423
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-45724",
+     "cwe": "CWE-434",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 519,
+     "bm25_rank": 608
+    },
+    {
+     "id": "CWE-134",
+     "cwe": "CWE-134",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 890,
+     "bm25_rank": 123
+    },
+    {
+     "id": "CWE-1229",
+     "cwe": "CWE-1229",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1369,
+     "bm25_rank": 1125
+    }
+   ]
+  },
+  "CWE89-05": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-6152",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-26562",
+     "cwe": "CWE-862",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1658
+    },
+    {
+     "id": "CWE-640",
+     "cwe": "CWE-640",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 10
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-6152",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-620",
+     "cwe": "CWE-620",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CWE-640",
+     "cwe": "CWE-640",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 10
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-564",
+     "cwe": "CWE-564",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 25
+    },
+    {
+     "id": "CVE-2020-26625",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 13,
+     "bm25_rank": 1537
+    },
+    {
+     "id": "CVE-2023-51978",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 22,
+     "bm25_rank": 1548
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-24751",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 326,
+     "bm25_rank": 369
+    },
+    {
+     "id": "CVE-2023-6457",
+     "cwe": "CWE-276",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 837,
+     "bm25_rank": 184
+    },
+    {
+     "id": "CWE-1426",
+     "cwe": "CWE-1426",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 807,
+     "bm25_rank": 1063
+    }
+   ]
+  },
+  "CWE89-06": {
+   "rag_dense": [
+    {
+     "id": "CWE-209",
+     "cwe": "CWE-209",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 223
+    },
+    {
+     "id": "CVE-2023-51062",
+     "cwe": "CWE-306",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 764
+    },
+    {
+     "id": "CWE-778",
+     "cwe": "CWE-778",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 232
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-497",
+     "cwe": "CWE-497",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 13,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CVE-2023-40546",
+     "cwe": "CWE-476",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 20,
+     "bm25_rank": 9
+    },
+    {
+     "id": "CWE-117",
+     "cwe": "CWE-117",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 11,
+     "bm25_rank": 29
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-30015",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 4,
+     "bm25_rank": 1400
+    },
+    {
+     "id": "CVE-2023-30014",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 6,
+     "bm25_rank": 1399
+    },
+    {
+     "id": "CVE-2023-30016",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 1401
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-176",
+     "cwe": "CWE-176",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 529,
+     "bm25_rank": 275
+    },
+    {
+     "id": "CVE-2023-6451",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1055,
+     "bm25_rank": 1596
+    },
+    {
+     "id": "CWE-307",
+     "cwe": "CWE-307",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 194,
+     "bm25_rank": 457
+    }
+   ]
+  },
+  "CWE89-07": {
+   "rag_dense": [
+    {
+     "id": "CVE-2024-25619",
+     "cwe": "CWE-613",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 534
+    },
+    {
+     "id": "CVE-2024-30262",
+     "cwe": "CWE-613",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 280
+    },
+    {
+     "id": "CWE-613",
+     "cwe": "CWE-613",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 156
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2022-2586",
+     "cwe": "CWE-416",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 13,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-6",
+     "cwe": "CWE-6",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 19,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CVE-2024-1900",
+     "cwe": "CWE-613",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 26,
+     "bm25_rank": 17
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2020-26627",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 64,
+     "bm25_rank": 296
+    },
+    {
+     "id": "CWE-89",
+     "cwe": "CWE-89",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 67,
+     "bm25_rank": 112
+    },
+    {
+     "id": "CVE-2020-26625",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 74,
+     "bm25_rank": 1334
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-640",
+     "cwe": "CWE-640",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 150,
+     "bm25_rank": 59
+    },
+    {
+     "id": "CWE-1094",
+     "cwe": "CWE-1094",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 391,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-39316",
+     "cwe": "CWE-190",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 857,
+     "bm25_rank": 580
+    }
+   ]
+  },
+  "CWE89-08": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-48926",
+     "cwe": "CWE-862",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1575
+    },
+    {
+     "id": "CWE-93",
+     "cwe": "CWE-93",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1392
+    },
+    {
+     "id": "CWE-943",
+     "cwe": "CWE-943",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 167
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-566",
+     "cwe": "CWE-566",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-1049",
+     "cwe": "CWE-1049",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 15
+    },
+    {
+     "id": "CWE-462",
+     "cwe": "CWE-462",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 24
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-943",
+     "cwe": "CWE-943",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 167
+    },
+    {
+     "id": "CVE-2020-26630",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 8,
+     "bm25_rank": 475
+    },
+    {
+     "id": "CVE-2020-26627",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 480
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2020-29504",
+     "cwe": "CWE-295",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 148,
+     "bm25_rank": 1777
+    },
+    {
+     "id": "CVE-2024-0035",
+     "cwe": "CWE-476",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1632,
+     "bm25_rank": 1596
+    },
+    {
+     "id": "CWE-760",
+     "cwe": "CWE-760",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1045,
+     "bm25_rank": 321
+    }
+   ]
+  },
+  "CWE79-01": {
+   "rag_dense": [
+    {
+     "id": "CWE-598",
+     "cwe": "CWE-598",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1233
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 293
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-598",
+     "cwe": "CWE-598",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 11,
+     "bm25_rank": 52
+    },
+    {
+     "id": "CVE-2024-22075",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 86
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2024-22075",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 86
+    },
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 11,
+     "bm25_rank": 52
+    },
+    {
+     "id": "CVE-2023-29049",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 15,
+     "bm25_rank": 395
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-0195",
+     "cwe": "CWE-94",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 243,
+     "bm25_rank": 1666
+    },
+    {
+     "id": "CWE-460",
+     "cwe": "CWE-460",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1413,
+     "bm25_rank": 970
+    },
+    {
+     "id": "CWE-410",
+     "cwe": "CWE-410",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 854,
+     "bm25_rank": 939
+    }
+   ]
+  },
+  "CWE79-02": {
+   "rag_dense": [
+    {
+     "id": "CWE-615",
+     "cwe": "CWE-615",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-1113",
+     "cwe": "CWE-1113",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 30
+    },
+    {
+     "id": "CWE-1085",
+     "cwe": "CWE-1085",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 62
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-615",
+     "cwe": "CWE-615",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-1116",
+     "cwe": "CWE-1116",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-546",
+     "cwe": "CWE-546",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 12,
+     "bm25_rank": 2
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 4,
+     "bm25_rank": 104
+    },
+    {
+     "id": "CWE-83",
+     "cwe": "CWE-83",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 8,
+     "bm25_rank": 272
+    },
+    {
+     "id": "CWE-79",
+     "cwe": "CWE-79",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 47
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1121",
+     "cwe": "CWE-1121",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1378,
+     "bm25_rank": 832
+    },
+    {
+     "id": "CWE-360",
+     "cwe": "CWE-360",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1578,
+     "bm25_rank": 1045
+    },
+    {
+     "id": "CWE-1341",
+     "cwe": "CWE-1341",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1660,
+     "bm25_rank": 925
+    }
+   ]
+  },
+  "CWE79-03": {
+   "rag_dense": [
+    {
+     "id": "CWE-598",
+     "cwe": "CWE-598",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1263
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 298
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-598",
+     "cwe": "CWE-598",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-51126",
+     "cwe": "CWE-77",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 8,
+     "bm25_rank": 24
+    },
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 56
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 56
+    },
+    {
+     "id": "CVE-2024-22075",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 26,
+     "bm25_rank": 108
+    },
+    {
+     "id": "CVE-2023-29049",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 29,
+     "bm25_rank": 106
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-698",
+     "cwe": "CWE-698",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 85,
+     "bm25_rank": 470
+    },
+    {
+     "id": "CWE-82",
+     "cwe": "CWE-82",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 170,
+     "bm25_rank": 99
+    },
+    {
+     "id": "CWE-863",
+     "cwe": "CWE-863",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1466,
+     "bm25_rank": 423
+    }
+   ]
+  },
+  "CWE79-04": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 245
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1343
+    },
+    {
+     "id": "CVE-2024-24573",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 36
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-7125",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 4
+    },
+    {
+     "id": "CVE-2023-51740",
+     "cwe": "CWE-319",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 8,
+     "bm25_rank": 10
+    },
+    {
+     "id": "CVE-2024-24573",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 36
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-29049",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 14,
+     "bm25_rank": 146
+    },
+    {
+     "id": "CVE-2024-22075",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 38,
+     "bm25_rank": 92
+    },
+    {
+     "id": "CVE-2023-51246",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 72,
+     "bm25_rank": 87
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-1014",
+     "cwe": "CWE-400",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1831,
+     "bm25_rank": 1753
+    },
+    {
+     "id": "CWE-297",
+     "cwe": "CWE-297",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1596,
+     "bm25_rank": 577
+    },
+    {
+     "id": "CWE-415",
+     "cwe": "CWE-415",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1522,
+     "bm25_rank": 1037
+    }
+   ]
+  },
+  "CWE79-05": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1230
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 297
+    },
+    {
+     "id": "CWE-550",
+     "cwe": "CWE-550",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 8
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-536",
+     "cwe": "CWE-536",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-550",
+     "cwe": "CWE-550",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CWE-211",
+     "cwe": "CWE-211",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 4
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 27,
+     "bm25_rank": 58
+    },
+    {
+     "id": "CWE-87",
+     "cwe": "CWE-87",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 31,
+     "bm25_rank": 198
+    },
+    {
+     "id": "CVE-2023-29049",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 45,
+     "bm25_rank": 393
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-435",
+     "cwe": "CWE-435",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 473,
+     "bm25_rank": 417
+    },
+    {
+     "id": "CWE-74",
+     "cwe": "CWE-74",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 906,
+     "bm25_rank": 1111
+    },
+    {
+     "id": "CVE-2024-0605",
+     "cwe": "CWE-362",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 564,
+     "bm25_rank": 1637
+    }
+   ]
+  },
+  "CWE79-06": {
+   "rag_dense": [
+    {
+     "id": "CVE-2024-23825",
+     "cwe": "CWE-918",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 428
+    },
+    {
+     "id": "CVE-2023-29049",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 279
+    },
+    {
+     "id": "CWE-1007",
+     "cwe": "CWE-1007",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 94
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52119",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 9,
+     "bm25_rank": 26
+    },
+    {
+     "id": "CWE-525",
+     "cwe": "CWE-525",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 17,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 45
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-29049",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 279
+    },
+    {
+     "id": "CVE-2023-5911",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 4,
+     "bm25_rank": 185
+    },
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 45
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1247",
+     "cwe": "CWE-1247",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 917,
+     "bm25_rank": 991
+    },
+    {
+     "id": "CWE-1333",
+     "cwe": "CWE-1333",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 367,
+     "bm25_rank": 1038
+    },
+    {
+     "id": "CWE-561",
+     "cwe": "CWE-561",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1711,
+     "bm25_rank": 1216
+    }
+   ]
+  },
+  "CWE79-07": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 46
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1233
+    },
+    {
+     "id": "CWE-615",
+     "cwe": "CWE-615",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 411
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-352",
+     "cwe": "CWE-352",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-525",
+     "cwe": "CWE-525",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 10,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CVE-2024-24829",
+     "cwe": "CWE-918",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 21
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-29049",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 409
+    },
+    {
+     "id": "CVE-2024-21627",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 29,
+     "bm25_rank": 144
+    },
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 34,
+     "bm25_rank": 56
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-1351",
+     "cwe": "CWE-295",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1245,
+     "bm25_rank": 1759
+    },
+    {
+     "id": "CWE-1253",
+     "cwe": "CWE-1253",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1662,
+     "bm25_rank": 725
+    },
+    {
+     "id": "CVE-2024-21650",
+     "cwe": "CWE-94",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 284,
+     "bm25_rank": 1655
+    }
+   ]
+  },
+  "CWE79-08": {
+   "rag_dense": [
+    {
+     "id": "CWE-1022",
+     "cwe": "CWE-1022",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 23
+    },
+    {
+     "id": "CVE-2024-25608",
+     "cwe": "CWE-601",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1794
+    },
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 29
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2024-22854",
+     "cwe": "CWE-601",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-1022",
+     "cwe": "CWE-1022",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 23
+    },
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 29
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-80",
+     "cwe": "CWE-80",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 29
+    },
+    {
+     "id": "CVE-2023-41710",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 146
+    },
+    {
+     "id": "CVE-2023-29049",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 6,
+     "bm25_rank": 232
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1434",
+     "cwe": "CWE-1434",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 794,
+     "bm25_rank": 983
+    },
+    {
+     "id": "CWE-250",
+     "cwe": "CWE-250",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1058,
+     "bm25_rank": 749
+    },
+    {
+     "id": "CVE-2024-28239",
+     "cwe": "CWE-601",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 80,
+     "bm25_rank": 283
+    }
+   ]
+  },
+  "CWE22-01": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 269
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 53
+    },
+    {
+     "id": "CVE-2024-22416",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 417
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 53
+    },
+    {
+     "id": "CWE-434",
+     "cwe": "CWE-434",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 45
+    },
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 43
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 269
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 53
+    },
+    {
+     "id": "CVE-2023-51127",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 64
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1423",
+     "cwe": "CWE-1423",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1819,
+     "bm25_rank": 775
+    },
+    {
+     "id": "CVE-2023-42374",
+     "cwe": "CWE-94",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 534,
+     "bm25_rank": 1715
+    },
+    {
+     "id": "CWE-299",
+     "cwe": "CWE-299",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1242,
+     "bm25_rank": 33
+    }
+   ]
+  },
+  "CWE22-02": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 14
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 63
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-646",
+     "cwe": "CWE-646",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 14
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 14
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 63
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-49552",
+     "cwe": "CWE-125",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 390,
+     "bm25_rank": 18
+    },
+    {
+     "id": "CWE-497",
+     "cwe": "CWE-497",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 199,
+     "bm25_rank": 103
+    },
+    {
+     "id": "CWE-531",
+     "cwe": "CWE-531",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 138,
+     "bm25_rank": 1229
+    }
+   ]
+  },
+  "CWE22-03": {
+   "rag_dense": [
+    {
+     "id": "CVE-2024-23826",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-50447",
+     "cwe": "CWE-94",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1712
+    },
+    {
+     "id": "CVE-2024-25108",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 164
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2024-23826",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2024-25143",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 16,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CVE-2024-0185",
+     "cwe": "CWE-434",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 13,
+     "bm25_rank": 40
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 22,
+     "bm25_rank": 360
+    },
+    {
+     "id": "CVE-2023-47890",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 31,
+     "bm25_rank": 1367
+    },
+    {
+     "id": "CVE-2023-47211",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 33,
+     "bm25_rank": 1366
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-32451",
+     "cwe": "CWE-269",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 757,
+     "bm25_rank": 475
+    },
+    {
+     "id": "CWE-797",
+     "cwe": "CWE-797",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 819,
+     "bm25_rank": 1289
+    },
+    {
+     "id": "CWE-81",
+     "cwe": "CWE-81",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 351,
+     "bm25_rank": 149
+    }
+   ]
+  },
+  "CWE22-04": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-44",
+     "cwe": "CWE-44",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 33
+    },
+    {
+     "id": "CWE-45",
+     "cwe": "CWE-45",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 36
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 4,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-646",
+     "cwe": "CWE-646",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 10,
+     "bm25_rank": 2
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 4,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-6623",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 15,
+     "bm25_rank": 16
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1078",
+     "cwe": "CWE-1078",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 472,
+     "bm25_rank": 630
+    },
+    {
+     "id": "CWE-74",
+     "cwe": "CWE-74",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1260,
+     "bm25_rank": 1168
+    },
+    {
+     "id": "CWE-250",
+     "cwe": "CWE-250",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1529,
+     "bm25_rank": 550
+    }
+   ]
+  },
+  "CWE22-05": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 491
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 95
+    },
+    {
+     "id": "CWE-779",
+     "cwe": "CWE-779",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 3
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-779",
+     "cwe": "CWE-779",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CWE-532",
+     "cwe": "CWE-532",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-598",
+     "cwe": "CWE-598",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 8,
+     "bm25_rank": 9
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 491
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 95
+    },
+    {
+     "id": "CVE-2023-51127",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 13,
+     "bm25_rank": 303
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-45716",
+     "cwe": "CWE-319",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 497,
+     "bm25_rank": 1816
+    },
+    {
+     "id": "CWE-228",
+     "cwe": "CWE-228",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1079,
+     "bm25_rank": 845
+    },
+    {
+     "id": "CVE-2023-33057",
+     "cwe": "CWE-20",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1687,
+     "bm25_rank": 1540
+    }
+   ]
+  },
+  "CWE22-06": {
+   "rag_dense": [
+    {
+     "id": "CWE-616",
+     "cwe": "CWE-616",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 262
+    },
+    {
+     "id": "CWE-434",
+     "cwe": "CWE-434",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 106
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 6
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CWE-48",
+     "cwe": "CWE-48",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 11,
+     "bm25_rank": 7
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 6,
+     "bm25_rank": 75
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 13
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-25630",
+     "cwe": "CWE-319",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1155,
+     "bm25_rank": 1812
+    },
+    {
+     "id": "CVE-2024-20803",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1636,
+     "bm25_rank": 765
+    },
+    {
+     "id": "CWE-1093",
+     "cwe": "CWE-1093",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 866,
+     "bm25_rank": 557
+    }
+   ]
+  },
+  "CWE22-07": {
+   "rag_dense": [
+    {
+     "id": "CWE-378",
+     "cwe": "CWE-378",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 113
+    },
+    {
+     "id": "CWE-524",
+     "cwe": "CWE-524",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 21
+    },
+    {
+     "id": "CVE-2023-6516",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 2
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-6516",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-524",
+     "cwe": "CWE-524",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 21
+    },
+    {
+     "id": "CVE-2023-34321",
+     "cwe": "CWE-119",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 11,
+     "bm25_rank": 5
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 14,
+     "bm25_rank": 4
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 21,
+     "bm25_rank": 17
+    },
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 43,
+     "bm25_rank": 118
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-31139",
+     "cwe": "CWE-611",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1469,
+     "bm25_rank": 1755
+    },
+    {
+     "id": "CWE-1269",
+     "cwe": "CWE-1269",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1540,
+     "bm25_rank": 324
+    },
+    {
+     "id": "CVE-2021-24870",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 194,
+     "bm25_rank": 183
+    }
+   ]
+  },
+  "CWE22-08": {
+   "rag_dense": [
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 191
+    },
+    {
+     "id": "CWE-616",
+     "cwe": "CWE-616",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 22
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 3
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 13,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-616",
+     "cwe": "CWE-616",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 22
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 191
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CVE-2024-22050",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 11,
+     "bm25_rank": 73
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-58",
+     "cwe": "CWE-58",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 121,
+     "bm25_rank": 69
+    },
+    {
+     "id": "CWE-413",
+     "cwe": "CWE-413",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 840,
+     "bm25_rank": 1167
+    },
+    {
+     "id": "CVE-2023-36629",
+     "cwe": "CWE-125",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 694,
+     "bm25_rank": 1495
+    }
+   ]
+  },
+  "CWE78-01": {
+   "rag_dense": [
+    {
+     "id": "CWE-1080",
+     "cwe": "CWE-1080",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-785",
+     "cwe": "CWE-785",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-1120",
+     "cwe": "CWE-1120",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 1094
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-1080",
+     "cwe": "CWE-1080",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-785",
+     "cwe": "CWE-785",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-48",
+     "cwe": "CWE-48",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 10
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-51984",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 27,
+     "bm25_rank": 105
+    },
+    {
+     "id": "CVE-2023-41289",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 69,
+     "bm25_rank": 434
+    },
+    {
+     "id": "CVE-2023-50094",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 73,
+     "bm25_rank": 4
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1385",
+     "cwe": "CWE-1385",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1272,
+     "bm25_rank": 49
+    },
+    {
+     "id": "CWE-1293",
+     "cwe": "CWE-1293",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 661,
+     "bm25_rank": 515
+    },
+    {
+     "id": "CVE-2023-49259",
+     "cwe": "CWE-327",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 668,
+     "bm25_rank": 1799
+    }
+   ]
+  },
+  "CWE78-02": {
+   "rag_dense": [
+    {
+     "id": "CWE-42",
+     "cwe": "CWE-42",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 65
+    },
+    {
+     "id": "CWE-46",
+     "cwe": "CWE-46",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 66
+    },
+    {
+     "id": "CWE-44",
+     "cwe": "CWE-44",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 71
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-785",
+     "cwe": "CWE-785",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 12,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-55",
+     "cwe": "CWE-55",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 11,
+     "bm25_rank": 8
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-50094",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 35,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-51984",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 74,
+     "bm25_rank": 98
+    },
+    {
+     "id": "CVE-2023-41289",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 82,
+     "bm25_rank": 368
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-0241",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1082,
+     "bm25_rank": 1826
+    },
+    {
+     "id": "CWE-422",
+     "cwe": "CWE-422",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1800,
+     "bm25_rank": 702
+    },
+    {
+     "id": "CVE-2023-42358",
+     "cwe": "CWE-862",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1221,
+     "bm25_rank": 1501
+    }
+   ]
+  },
+  "CWE78-03": {
+   "rag_dense": [
+    {
+     "id": "CWE-44",
+     "cwe": "CWE-44",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 22
+    },
+    {
+     "id": "CWE-427",
+     "cwe": "CWE-427",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 18
+    },
+    {
+     "id": "CWE-73",
+     "cwe": "CWE-73",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 94
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-777",
+     "cwe": "CWE-777",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-1080",
+     "cwe": "CWE-1080",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-427",
+     "cwe": "CWE-427",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 18
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-50094",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 51,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CVE-2023-29048",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 141,
+     "bm25_rank": 733
+    },
+    {
+     "id": "CVE-2024-21488",
+     "cwe": "CWE-77",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 164,
+     "bm25_rank": 12
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-794",
+     "cwe": "CWE-794",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 160,
+     "bm25_rank": 1382
+    },
+    {
+     "id": "CWE-185",
+     "cwe": "CWE-185",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 46,
+     "bm25_rank": 862
+    },
+    {
+     "id": "CWE-1190",
+     "cwe": "CWE-1190",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1579,
+     "bm25_rank": 1171
+    }
+   ]
+  },
+  "CWE78-04": {
+   "rag_dense": [
+    {
+     "id": "CWE-785",
+     "cwe": "CWE-785",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CWE-467",
+     "cwe": "CWE-467",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 154
+    },
+    {
+     "id": "CWE-469",
+     "cwe": "CWE-469",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 57
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-785",
+     "cwe": "CWE-785",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 14,
+     "bm25_rank": 18
+    },
+    {
+     "id": "CWE-469",
+     "cwe": "CWE-469",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 57
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-52314",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 67,
+     "bm25_rank": 132
+    },
+    {
+     "id": "CVE-2023-50094",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 91,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-52311",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 174,
+     "bm25_rank": 131
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-6552",
+     "cwe": "CWE-601",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1534,
+     "bm25_rank": 1773
+    },
+    {
+     "id": "CWE-1245",
+     "cwe": "CWE-1245",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 563,
+     "bm25_rank": 527
+    },
+    {
+     "id": "CWE-1221",
+     "cwe": "CWE-1221",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1719,
+     "bm25_rank": 163
+    }
+   ]
+  },
+  "CWE78-05": {
+   "rag_dense": [
+    {
+     "id": "CVE-2024-27294",
+     "cwe": "CWE-732",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2024-20805",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 178
+    },
+    {
+     "id": "CVE-2024-25978",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 497
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2024-27294",
+     "cwe": "CWE-732",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-243",
+     "cwe": "CWE-243",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 14
+    },
+    {
+     "id": "CWE-530",
+     "cwe": "CWE-530",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 16,
+     "bm25_rank": 7
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-35959",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 4,
+     "bm25_rank": 83
+    },
+    {
+     "id": "CVE-2023-35962",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 88
+    },
+    {
+     "id": "CVE-2023-35961",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 13,
+     "bm25_rank": 84
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-193",
+     "cwe": "CWE-193",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 353,
+     "bm25_rank": 1186
+    },
+    {
+     "id": "CVE-2024-0946",
+     "cwe": "CWE-918",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1765,
+     "bm25_rank": 868
+    },
+    {
+     "id": "CWE-499",
+     "cwe": "CWE-499",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 736,
+     "bm25_rank": 710
+    }
+   ]
+  },
+  "CWE78-06": {
+   "rag_dense": [
+    {
+     "id": "CWE-54",
+     "cwe": "CWE-54",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 60
+    },
+    {
+     "id": "CWE-57",
+     "cwe": "CWE-57",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 336
+    },
+    {
+     "id": "CWE-44",
+     "cwe": "CWE-44",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 11
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-50094",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-44",
+     "cwe": "CWE-44",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CWE-42",
+     "cwe": "CWE-42",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 20
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-50094",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2024-22529",
+     "cwe": "CWE-77",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 94,
+     "bm25_rank": 99
+    },
+    {
+     "id": "CWE-78",
+     "cwe": "CWE-78",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 100,
+     "bm25_rank": 45
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-22648",
+     "cwe": "CWE-918",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1305,
+     "bm25_rank": 1624
+    },
+    {
+     "id": "CVE-2023-42865",
+     "cwe": "CWE-125",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 209,
+     "bm25_rank": 1490
+    },
+    {
+     "id": "CWE-487",
+     "cwe": "CWE-487",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1055,
+     "bm25_rank": 1256
+    }
+   ]
+  },
+  "CWE78-07": {
+   "rag_dense": [
+    {
+     "id": "CWE-44",
+     "cwe": "CWE-44",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 11
+    },
+    {
+     "id": "CWE-785",
+     "cwe": "CWE-785",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CWE-1080",
+     "cwe": "CWE-1080",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 4
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-1080",
+     "cwe": "CWE-1080",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 4
+    },
+    {
+     "id": "CWE-785",
+     "cwe": "CWE-785",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CWE-44",
+     "cwe": "CWE-44",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 11
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-50094",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 16,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-52311",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 52,
+     "bm25_rank": 146
+    },
+    {
+     "id": "CVE-2024-21488",
+     "cwe": "CWE-77",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 87,
+     "bm25_rank": 17
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-48",
+     "cwe": "CWE-48",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 12
+    },
+    {
+     "id": "CWE-210",
+     "cwe": "CWE-210",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 606,
+     "bm25_rank": 1180
+    },
+    {
+     "id": "CVE-2024-25606",
+     "cwe": "CWE-611",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1740,
+     "bm25_rank": 849
+    }
+   ]
+  },
+  "CWE78-08": {
+   "rag_dense": [
+    {
+     "id": "CWE-44",
+     "cwe": "CWE-44",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 64
+    },
+    {
+     "id": "CWE-45",
+     "cwe": "CWE-45",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 70
+    },
+    {
+     "id": "CWE-42",
+     "cwe": "CWE-42",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 328
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-427",
+     "cwe": "CWE-427",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 9,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-426",
+     "cwe": "CWE-426",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 16,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CWE-48",
+     "cwe": "CWE-48",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 33
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-50094",
+     "cwe": "CWE-78",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 36,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-78",
+     "cwe": "CWE-78",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 117,
+     "bm25_rank": 25
+    },
+    {
+     "id": "CWE-88",
+     "cwe": "CWE-88",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 119,
+     "bm25_rank": 123
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-600",
+     "cwe": "CWE-600",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 819,
+     "bm25_rank": 1260
+    },
+    {
+     "id": "CVE-2024-25715",
+     "cwe": "CWE-601",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 887,
+     "bm25_rank": 1787
+    },
+    {
+     "id": "CVE-2020-11862",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1058,
+     "bm25_rank": 1845
+    }
+   ]
+  },
+  "CWE502-01": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 16
+    },
+    {
+     "id": "CWE-315",
+     "cwe": "CWE-315",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 315
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 91
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 16
+    },
+    {
+     "id": "CVE-2023-45718",
+     "cwe": "CWE-384",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 12,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CWE-807",
+     "cwe": "CWE-807",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 23,
+     "bm25_rank": 5
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 68,
+     "bm25_rank": 209
+    },
+    {
+     "id": "CVE-2023-1405",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 171,
+     "bm25_rank": 1402
+    },
+    {
+     "id": "CVE-2023-51389",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 360,
+     "bm25_rank": 1404
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-434",
+     "cwe": "CWE-434",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 41,
+     "bm25_rank": 65
+    },
+    {
+     "id": "CVE-2024-20004",
+     "cwe": "CWE-20",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1676,
+     "bm25_rank": 1509
+    },
+    {
+     "id": "CVE-2024-24592",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 819,
+     "bm25_rank": 1598
+    }
+   ]
+  },
+  "CWE502-02": {
+   "rag_dense": [
+    {
+     "id": "CWE-116",
+     "cwe": "CWE-116",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 243
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 4
+    },
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 14
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 4
+    },
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 14
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 26
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 14
+    },
+    {
+     "id": "CVE-2017-20189",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 70,
+     "bm25_rank": 1223
+    },
+    {
+     "id": "CVE-2023-1405",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 125,
+     "bm25_rank": 1222
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2022-45793",
+     "cwe": "CWE-276",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1808,
+     "bm25_rank": 1695
+    },
+    {
+     "id": "CVE-2024-20816",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 803,
+     "bm25_rank": 1490
+    },
+    {
+     "id": "CWE-470",
+     "cwe": "CWE-470",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 621,
+     "bm25_rank": 925
+    }
+   ]
+  },
+  "CWE502-03": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-51389",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CVE-2024-23525",
+     "cwe": "CWE-611",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 805
+    },
+    {
+     "id": "CVE-2023-49256",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 1489
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-51389",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-112",
+     "cwe": "CWE-112",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 13,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CWE-1046",
+     "cwe": "CWE-1046",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 23,
+     "bm25_rank": 1
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-51389",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CVE-2023-1405",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 51,
+     "bm25_rank": 664
+    },
+    {
+     "id": "CVE-2023-6528",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 146,
+     "bm25_rank": 250
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-648",
+     "cwe": "CWE-648",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1481,
+     "bm25_rank": 295
+    },
+    {
+     "id": "CWE-1316",
+     "cwe": "CWE-1316",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1751,
+     "bm25_rank": 1141
+    },
+    {
+     "id": "CWE-308",
+     "cwe": "CWE-308",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1229,
+     "bm25_rank": 657
+    }
+   ]
+  },
+  "CWE502-04": {
+   "rag_dense": [
+    {
+     "id": "CWE-524",
+     "cwe": "CWE-524",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 9
+    },
+    {
+     "id": "CWE-313",
+     "cwe": "CWE-313",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 97
+    },
+    {
+     "id": "CWE-525",
+     "cwe": "CWE-525",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 17
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-524",
+     "cwe": "CWE-524",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 9
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 4
+    },
+    {
+     "id": "CWE-525",
+     "cwe": "CWE-525",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 17
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2024-24590",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 77,
+     "bm25_rank": 834
+    },
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 112,
+     "bm25_rank": 148
+    },
+    {
+     "id": "CVE-2023-51389",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 202,
+     "bm25_rank": 1382
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1104",
+     "cwe": "CWE-1104",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1121,
+     "bm25_rank": 1037
+    },
+    {
+     "id": "CWE-1073",
+     "cwe": "CWE-1073",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 554,
+     "bm25_rank": 606
+    },
+    {
+     "id": "CVE-2023-45724",
+     "cwe": "CWE-434",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1374,
+     "bm25_rank": 586
+    }
+   ]
+  },
+  "CWE502-05": {
+   "rag_dense": [
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 81
+    },
+    {
+     "id": "CWE-515",
+     "cwe": "CWE-515",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 130
+    },
+    {
+     "id": "CWE-1070",
+     "cwe": "CWE-1070",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 454
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-1051",
+     "cwe": "CWE-1051",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 11,
+     "bm25_rank": 10
+    },
+    {
+     "id": "CWE-354",
+     "cwe": "CWE-354",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 15,
+     "bm25_rank": 14
+    },
+    {
+     "id": "CVE-2023-33038",
+     "cwe": "CWE-787",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 47
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 81
+    },
+    {
+     "id": "CVE-2023-51389",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 35,
+     "bm25_rank": 508
+    },
+    {
+     "id": "CVE-2023-52357",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 37,
+     "bm25_rank": 1290
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-6036",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1824,
+     "bm25_rank": 352
+    },
+    {
+     "id": "CVE-2023-51393",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1176,
+     "bm25_rank": 424
+    },
+    {
+     "id": "CWE-1104",
+     "cwe": "CWE-1104",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1336,
+     "bm25_rank": 837
+    }
+   ]
+  },
+  "CWE502-06": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-50447",
+     "cwe": "CWE-94",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1690
+    },
+    {
+     "id": "CWE-42",
+     "cwe": "CWE-42",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 116
+    },
+    {
+     "id": "CWE-48",
+     "cwe": "CWE-48",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 69
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-785",
+     "cwe": "CWE-785",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 19,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-627",
+     "cwe": "CWE-627",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 24,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 12,
+     "bm25_rank": 17
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-51389",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 85,
+     "bm25_rank": 1378
+    },
+    {
+     "id": "CVE-2024-24590",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 115,
+     "bm25_rank": 1375
+    },
+    {
+     "id": "CVE-2024-0936",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 190,
+     "bm25_rank": 464
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-507",
+     "cwe": "CWE-507",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1341,
+     "bm25_rank": 1213
+    },
+    {
+     "id": "CVE-2023-35004",
+     "cwe": "CWE-190",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 558,
+     "bm25_rank": 594
+    },
+    {
+     "id": "CWE-1108",
+     "cwe": "CWE-1108",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 64,
+     "bm25_rank": 1037
+    }
+   ]
+  },
+  "CWE502-07": {
+   "rag_dense": [
+    {
+     "id": "CWE-539",
+     "cwe": "CWE-539",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 834
+    },
+    {
+     "id": "CWE-784",
+     "cwe": "CWE-784",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 48
+    },
+    {
+     "id": "CWE-315",
+     "cwe": "CWE-315",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 42
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-1275",
+     "cwe": "CWE-1275",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-614",
+     "cwe": "CWE-614",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CVE-2023-6292",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 13,
+     "bm25_rank": 1
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-6049",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 28,
+     "bm25_rank": 1146
+    },
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 45,
+     "bm25_rank": 171
+    },
+    {
+     "id": "CVE-2023-1405",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 147,
+     "bm25_rank": 1147
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1330",
+     "cwe": "CWE-1330",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 51,
+     "bm25_rank": 569
+    },
+    {
+     "id": "CVE-2023-6552",
+     "cwe": "CWE-601",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 770,
+     "bm25_rank": 1749
+    },
+    {
+     "id": "CVE-2024-22394",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 125,
+     "bm25_rank": 1435
+    }
+   ]
+  },
+  "CWE502-08": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-378",
+     "cwe": "CWE-378",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 23
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-52289",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-379",
+     "cwe": "CWE-379",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-52288",
+     "cwe": "CWE-22",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 7
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2024-24590",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 92,
+     "bm25_rank": 763
+    },
+    {
+     "id": "CWE-502",
+     "cwe": "CWE-502",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 231,
+     "bm25_rank": 303
+    },
+    {
+     "id": "CVE-2024-3366",
+     "cwe": "CWE-502",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 295,
+     "bm25_rank": 13
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-44112",
+     "cwe": "CWE-125",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1491,
+     "bm25_rank": 1398
+    },
+    {
+     "id": "CWE-531",
+     "cwe": "CWE-531",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 773,
+     "bm25_rank": 400
+    },
+    {
+     "id": "CWE-360",
+     "cwe": "CWE-360",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1228,
+     "bm25_rank": 711
+    }
+   ]
+  },
+  "CWE798-01": {
+   "rag_dense": [
+    {
+     "id": "CVE-2024-23835",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1836
+    },
+    {
+     "id": "CVE-2023-51982",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 24
+    },
+    {
+     "id": "CVE-2024-24829",
+     "cwe": "CWE-918",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 371
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-51982",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 24
+    },
+    {
+     "id": "CWE-306",
+     "cwe": "CWE-306",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 15,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CVE-2023-4539",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 10,
+     "bm25_rank": 17
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 26
+    },
+    {
+     "id": "CVE-2023-4539",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 10,
+     "bm25_rank": 17
+    },
+    {
+     "id": "CVE-2023-50948",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 16,
+     "bm25_rank": 19
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-114",
+     "cwe": "CWE-114",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 720,
+     "bm25_rank": 464
+    },
+    {
+     "id": "CVE-2023-52427",
+     "cwe": "CWE-770",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1196,
+     "bm25_rank": 1829
+    },
+    {
+     "id": "CWE-780",
+     "cwe": "CWE-780",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1104,
+     "bm25_rank": 1296
+    }
+   ]
+  },
+  "CWE798-02": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-26562",
+     "cwe": "CWE-862",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 35
+    },
+    {
+     "id": "CVE-2023-6152",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 40
+    },
+    {
+     "id": "CVE-2023-6621",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 15
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-6620",
+     "cwe": "CWE-89",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 9
+    },
+    {
+     "id": "CVE-2023-6621",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 15
+    },
+    {
+     "id": "CWE-1320",
+     "cwe": "CWE-1320",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 13,
+     "bm25_rank": 1
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-50124",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 79,
+     "bm25_rank": 1399
+    },
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 104,
+     "bm25_rank": 1410
+    },
+    {
+     "id": "CVE-2023-37608",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 202,
+     "bm25_rank": 1395
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-153",
+     "cwe": "CWE-153",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 225,
+     "bm25_rank": 794
+    },
+    {
+     "id": "CWE-1112",
+     "cwe": "CWE-1112",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1296,
+     "bm25_rank": 904
+    },
+    {
+     "id": "CWE-118",
+     "cwe": "CWE-118",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1746,
+     "bm25_rank": 431
+    }
+   ]
+  },
+  "CWE798-03": {
+   "rag_dense": [
+    {
+     "id": "CWE-1385",
+     "cwe": "CWE-1385",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-40545",
+     "cwe": "CWE-306",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 502
+    },
+    {
+     "id": "CVE-2023-50962",
+     "cwe": "CWE-319",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 289
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-1385",
+     "cwe": "CWE-1385",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-46943",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-1270",
+     "cwe": "CWE-1270",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 3
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-50948",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 4,
+     "bm25_rank": 1402
+    },
+    {
+     "id": "CVE-2023-46943",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CVE-2024-23726",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 25,
+     "bm25_rank": 673
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-157",
+     "cwe": "CWE-157",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 523,
+     "bm25_rank": 780
+    },
+    {
+     "id": "CWE-128",
+     "cwe": "CWE-128",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1057,
+     "bm25_rank": 623
+    },
+    {
+     "id": "CWE-261",
+     "cwe": "CWE-261",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 633,
+     "bm25_rank": 1040
+    }
+   ]
+  },
+  "CWE798-04": {
+   "rag_dense": [
+    {
+     "id": "CVE-2024-22416",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CVE-2024-28174",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 39
+    },
+    {
+     "id": "CWE-1385",
+     "cwe": "CWE-1385",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 513
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2024-22416",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CVE-2024-28174",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 39
+    },
+    {
+     "id": "CVE-2023-5881",
+     "cwe": "CWE-306",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 14,
+     "bm25_rank": 22
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 1319
+    },
+    {
+     "id": "CVE-2023-46943",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 12,
+     "bm25_rank": 1301
+    },
+    {
+     "id": "CVE-2024-23685",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 38,
+     "bm25_rank": 1302
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2024-23629",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 66,
+     "bm25_rank": 1525
+    },
+    {
+     "id": "CVE-2024-0490",
+     "cwe": "CWE-200",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 296,
+     "bm25_rank": 1710
+    },
+    {
+     "id": "CVE-2024-24399",
+     "cwe": "CWE-434",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 107,
+     "bm25_rank": 176
+    }
+   ]
+  },
+  "CWE798-05": {
+   "rag_dense": [
+    {
+     "id": "CVE-2024-25301",
+     "cwe": "CWE-94",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1683
+    },
+    {
+     "id": "CVE-2024-28239",
+     "cwe": "CWE-601",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 39
+    },
+    {
+     "id": "CVE-2024-22416",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 131
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2024-28239",
+     "cwe": "CWE-601",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 39
+    },
+    {
+     "id": "CWE-306",
+     "cwe": "CWE-306",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 24,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 14,
+     "bm25_rank": 27
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 14,
+     "bm25_rank": 27
+    },
+    {
+     "id": "CVE-2023-50974",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 22,
+     "bm25_rank": 1362
+    },
+    {
+     "id": "CVE-2024-23687",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 26,
+     "bm25_rank": 1370
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-75",
+     "cwe": "CWE-75",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1488,
+     "bm25_rank": 1194
+    },
+    {
+     "id": "CWE-666",
+     "cwe": "CWE-666",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1649,
+     "bm25_rank": 1159
+    },
+    {
+     "id": "CWE-39",
+     "cwe": "CWE-39",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1051,
+     "bm25_rank": 634
+    }
+   ]
+  },
+  "CWE798-06": {
+   "rag_dense": [
+    {
+     "id": "CWE-598",
+     "cwe": "CWE-598",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CVE-2024-22416",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-50092",
+     "cwe": "CWE-79",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 293
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-598",
+     "cwe": "CWE-598",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CVE-2024-22416",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CWE-444",
+     "cwe": "CWE-444",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 6
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2024-23453",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 96,
+     "bm25_rank": 38
+    },
+    {
+     "id": "CVE-2023-46943",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 104,
+     "bm25_rank": 181
+    },
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 157,
+     "bm25_rank": 1376
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-583",
+     "cwe": "CWE-583",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 676,
+     "bm25_rank": 681
+    },
+    {
+     "id": "CWE-794",
+     "cwe": "CWE-794",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 304,
+     "bm25_rank": 1258
+    },
+    {
+     "id": "CWE-186",
+     "cwe": "CWE-186",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1449,
+     "bm25_rank": 959
+    }
+   ]
+  },
+  "CWE798-07": {
+   "rag_dense": [
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 198
+    },
+    {
+     "id": "CVE-2023-48251",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-49257",
+     "cwe": "CWE-732",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 501
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2023-48251",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2024-22416",
+     "cwe": "CWE-352",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 4,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CWE-306",
+     "cwe": "CWE-306",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 17
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 198
+    },
+    {
+     "id": "CVE-2023-48251",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-50948",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 7,
+     "bm25_rank": 84
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-599",
+     "cwe": "CWE-599",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 84,
+     "bm25_rank": 123
+    },
+    {
+     "id": "CWE-612",
+     "cwe": "CWE-612",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1150,
+     "bm25_rank": 1271
+    },
+    {
+     "id": "CWE-1288",
+     "cwe": "CWE-1288",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 878,
+     "bm25_rank": 954
+    }
+   ]
+  },
+  "CWE798-08": {
+   "rag_dense": [
+    {
+     "id": "CVE-2024-25141",
+     "cwe": "CWE-295",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 1770
+    },
+    {
+     "id": "CVE-2024-1351",
+     "cwe": "CWE-295",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-46942",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 1588
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CVE-2024-1351",
+     "cwe": "CWE-295",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 1
+    },
+    {
+     "id": "CVE-2023-51982",
+     "cwe": "CWE-287",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 34
+    },
+    {
+     "id": "CVE-2024-21663",
+     "cwe": "CWE-77",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 8,
+     "bm25_rank": 28
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CVE-2023-38995",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 4,
+     "bm25_rank": 138
+    },
+    {
+     "id": "CVE-2023-50974",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 27,
+     "bm25_rank": 440
+    },
+    {
+     "id": "CVE-2024-22853",
+     "cwe": "CWE-798",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 41,
+     "bm25_rank": 1442
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-37575",
+     "cwe": "CWE-416",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1287,
+     "bm25_rank": 1502
+    },
+    {
+     "id": "CWE-771",
+     "cwe": "CWE-771",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 940,
+     "bm25_rank": 1303
+    },
+    {
+     "id": "CVE-2023-41090",
+     "cwe": "CWE-362",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 712,
+     "bm25_rank": 535
+    }
+   ]
+  },
+  "CWE120-01": {
+   "rag_dense": [
+    {
+     "id": "CWE-1427",
+     "cwe": "CWE-1427",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 207
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 85
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 62
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-627",
+     "cwe": "CWE-627",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 6,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CWE-119",
+     "cwe": "CWE-119",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 25
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 62
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 85
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 62
+    },
+    {
+     "id": "CWE-119",
+     "cwe": "CWE-119",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 25
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-641",
+     "cwe": "CWE-641",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 560,
+     "bm25_rank": 57
+    },
+    {
+     "id": "CVE-2023-38627",
+     "cwe": "CWE-918",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1349,
+     "bm25_rank": 1640
+    },
+    {
+     "id": "CWE-597",
+     "cwe": "CWE-597",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1297,
+     "bm25_rank": 542
+    }
+   ]
+  },
+  "CWE120-02": {
+   "rag_dense": [
+    {
+     "id": "CWE-88",
+     "cwe": "CWE-88",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 58
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 2
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 13
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-119",
+     "cwe": "CWE-119",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 15,
+     "bm25_rank": 3
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-6",
+     "cwe": "CWE-6",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1339,
+     "bm25_rank": 733
+    },
+    {
+     "id": "CVE-2024-1063",
+     "cwe": "CWE-918",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1733,
+     "bm25_rank": 1614
+    },
+    {
+     "id": "CWE-294",
+     "cwe": "CWE-294",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 563,
+     "bm25_rank": 110
+    }
+   ]
+  },
+  "CWE120-03": {
+   "rag_dense": [
+    {
+     "id": "CWE-590",
+     "cwe": "CWE-590",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CWE-761",
+     "cwe": "CWE-761",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 10
+    },
+    {
+     "id": "CWE-467",
+     "cwe": "CWE-467",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 625
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-590",
+     "cwe": "CWE-590",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CWE-761",
+     "cwe": "CWE-761",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 10
+    },
+    {
+     "id": "CWE-457",
+     "cwe": "CWE-457",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 9,
+     "bm25_rank": 7
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 8,
+     "bm25_rank": 24
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 13,
+     "bm25_rank": 74
+    },
+    {
+     "id": "CWE-122",
+     "cwe": "CWE-122",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 21,
+     "bm25_rank": 55
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CVE-2023-45724",
+     "cwe": "CWE-434",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1713,
+     "bm25_rank": 1428
+    },
+    {
+     "id": "CWE-146",
+     "cwe": "CWE-146",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 602,
+     "bm25_rank": 226
+    },
+    {
+     "id": "CVE-2024-0017",
+     "cwe": "CWE-863",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1382,
+     "bm25_rank": 1684
+    }
+   ]
+  },
+  "CWE120-04": {
+   "rag_dense": [
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 14
+    },
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 2
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 14
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 14
+    },
+    {
+     "id": "CVE-2023-39444",
+     "cwe": "CWE-119",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 14,
+     "bm25_rank": 33
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-1287",
+     "cwe": "CWE-1287",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 424,
+     "bm25_rank": 461
+    },
+    {
+     "id": "CWE-515",
+     "cwe": "CWE-515",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 180,
+     "bm25_rank": 1109
+    },
+    {
+     "id": "CWE-1386",
+     "cwe": "CWE-1386",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1577,
+     "bm25_rank": 692
+    }
+   ]
+  },
+  "CWE120-05": {
+   "rag_dense": [
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CWE-193",
+     "cwe": "CWE-193",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 118
+    },
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 3
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CWE-466",
+     "cwe": "CWE-466",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 9,
+     "bm25_rank": 1
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 13
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 6,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CVE-2023-40250",
+     "cwe": "CWE-120",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 17,
+     "bm25_rank": 50
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-529",
+     "cwe": "CWE-529",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1317,
+     "bm25_rank": 1251
+    },
+    {
+     "id": "CWE-282",
+     "cwe": "CWE-282",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1206,
+     "bm25_rank": 922
+    },
+    {
+     "id": "CWE-501",
+     "cwe": "CWE-501",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 602,
+     "bm25_rank": 1243
+    }
+   ]
+  },
+  "CWE120-06": {
+   "rag_dense": [
+    {
+     "id": "CWE-193",
+     "cwe": "CWE-193",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 119
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 2
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 2
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 8
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 2,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 5,
+     "bm25_rank": 8
+    },
+    {
+     "id": "CVE-2023-35958",
+     "cwe": "CWE-119",
+     "kind": "cve",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 194
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-830",
+     "cwe": "CWE-830",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1638,
+     "bm25_rank": 1205
+    },
+    {
+     "id": "CVE-2024-20661",
+     "cwe": "CWE-400",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 552,
+     "bm25_rank": 1724
+    },
+    {
+     "id": "CWE-1392",
+     "cwe": "CWE-1392",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1656,
+     "bm25_rank": 669
+    }
+   ]
+  },
+  "CWE120-07": {
+   "rag_dense": [
+    {
+     "id": "CWE-193",
+     "cwe": "CWE-193",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1,
+     "bm25_rank": 192
+    },
+    {
+     "id": "CWE-682",
+     "cwe": "CWE-682",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 278
+    },
+    {
+     "id": "CWE-462",
+     "cwe": "CWE-462",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 3,
+     "bm25_rank": 181
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-93",
+     "cwe": "CWE-93",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 12,
+     "bm25_rank": 5
+    },
+    {
+     "id": "CWE-476",
+     "cwe": "CWE-476",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 18,
+     "bm25_rank": 20
+    },
+    {
+     "id": "CWE-1291",
+     "cwe": "CWE-1291",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 7,
+     "bm25_rank": 71
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 22,
+     "bm25_rank": 230
+    },
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 24,
+     "bm25_rank": 100
+    },
+    {
+     "id": "CWE-119",
+     "cwe": "CWE-119",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 27,
+     "bm25_rank": 104
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-280",
+     "cwe": "CWE-280",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1538,
+     "bm25_rank": 761
+    },
+    {
+     "id": "CVE-2023-47458",
+     "cwe": "CWE-862",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1818,
+     "bm25_rank": 1426
+    },
+    {
+     "id": "CVE-2024-3388",
+     "cwe": "CWE-269",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 1476,
+     "bm25_rank": 1646
+    }
+   ]
+  },
+  "CWE120-08": {
+   "rag_dense": [
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CWE-805",
+     "cwe": "CWE-805",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 2,
+     "bm25_rank": 26
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 7
+    }
+   ],
+   "rag_hybrid": [
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CWE-806",
+     "cwe": "CWE-806",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 5,
+     "bm25_rank": 3
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 7
+    }
+   ],
+   "rag_oracle": [
+    {
+     "id": "CWE-120",
+     "cwe": "CWE-120",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 1,
+     "bm25_rank": 6
+    },
+    {
+     "id": "CWE-787",
+     "cwe": "CWE-787",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 3,
+     "bm25_rank": 7
+    },
+    {
+     "id": "CWE-119",
+     "cwe": "CWE-119",
+     "kind": "cwe",
+     "on_target": true,
+     "dense_rank": 9,
+     "bm25_rank": 5
+    }
+   ],
+   "ctx_irrelevant": [
+    {
+     "id": "CWE-312",
+     "cwe": "CWE-312",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1079,
+     "bm25_rank": 760
+    },
+    {
+     "id": "CWE-1428",
+     "cwe": "CWE-1428",
+     "kind": "cwe",
+     "on_target": false,
+     "dense_rank": 1648,
+     "bm25_rank": 772
+    },
+    {
+     "id": "CVE-2023-26157",
+     "cwe": "CWE-125",
+     "kind": "cve",
+     "on_target": false,
+     "dense_rank": 972,
+     "bm25_rank": 362
+    }
+   ]
+  }
+ }
+}

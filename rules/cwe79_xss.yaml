@@ -1,0 +1,54 @@
+# CWE-79: data from a function parameter or the HTTP request is returned as part
+# of an HTML response without passing through an escaping function or an
+# auto-escaping template.
+rules:
+  - id: skgap-cwe79-xss
+    languages: [python]
+    severity: ERROR
+    message: "CWE-79: untrusted input reaches an HTML response without escaping"
+    metadata: {cwe: CWE-79}
+    mode: taint
+    pattern-sources:
+      - patterns:
+          - pattern: |
+              def $F(..., $P, ...):
+                  ...
+          - focus-metavariable: $P
+      - pattern-either:
+          - pattern: request.args
+          - pattern: request.form
+          - pattern: request.values
+          - pattern: request.json
+          - pattern: request.data
+          - pattern: request.cookies
+          - pattern: request.headers
+          - pattern: request.get_json(...)
+    pattern-sanitizers:
+      - pattern-either:
+          - pattern: escape(...)
+          - pattern: $M.escape(...)
+          - pattern: bleach.clean(...)
+          - pattern: quote(...)
+          - pattern: quote_plus(...)
+          - pattern: jsonify(...)
+          - pattern: render_template(...)
+          - pattern: render_template_string("...", ...)
+          - pattern: int(...)
+          - pattern: float(...)
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: return $X
+              - pattern: make_response($X, ...)
+              - pattern: Response($X, ...)
+              - pattern: render_template_string($X, ...)
+              - pattern: Markup($X)
+          - focus-metavariable: $X
+  # Supplementary syntactic rule: values collected in a list and joined later are
+  # not followed by the taint rule above.
+  - id: skgap-cwe79-html-fstring
+    languages: [python]
+    severity: ERROR
+    message: "CWE-79: f-string builds HTML around a value that is not escaped"
+    metadata: {cwe: CWE-79}
+    pattern-regex: '\bf["''][^"''\n]*<\w+[^"''\n]*\{(?!\s*(\w+\.)?(escape|quote|quote_plus|int|float|len)\()[^}]*\}'

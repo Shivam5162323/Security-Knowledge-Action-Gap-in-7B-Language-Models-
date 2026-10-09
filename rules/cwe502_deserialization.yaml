@@ -1,0 +1,42 @@
+# CWE-502: use of a deserialiser that can construct arbitrary objects or run code.
+rules:
+  - id: skgap-cwe502-unsafe-deserialization
+    languages: [python]
+    severity: ERROR
+    message: "CWE-502: data is loaded with a deserialiser that can execute code"
+    metadata: {cwe: CWE-502}
+    patterns:
+      - pattern-either:
+          - pattern: pickle.load(...)
+          - pattern: pickle.loads(...)
+          - pattern: pickle.Unpickler(...)
+          - pattern: cPickle.load(...)
+          - pattern: cPickle.loads(...)
+          - pattern: _pickle.loads(...)
+          - pattern: dill.load(...)
+          - pattern: dill.loads(...)
+          - pattern: cloudpickle.load(...)
+          - pattern: cloudpickle.loads(...)
+          - pattern: marshal.load(...)
+          - pattern: marshal.loads(...)
+          - pattern: shelve.open(...)
+          - pattern: jsonpickle.decode(...)
+          - pattern: joblib.load(...)
+          - pattern: torch.load(...)
+          - pattern: numpy.load(..., allow_pickle=True, ...)
+          - pattern: np.load(..., allow_pickle=True, ...)
+          - pattern: yaml.unsafe_load(...)
+          - pattern: yaml.full_load(...)
+          - pattern: yaml.load_all(...)
+          - pattern: yaml.load(...)
+          - pattern: eval(...)
+          - pattern: exec(...)
+      - pattern-not: yaml.load(..., Loader=yaml.SafeLoader, ...)
+      - pattern-not: yaml.load(..., Loader=yaml.CSafeLoader, ...)
+      - pattern-not: yaml.load(..., Loader=SafeLoader, ...)
+      - pattern-not: yaml.load(..., Loader=CSafeLoader, ...)
+      - pattern-not: yaml.load($X, yaml.SafeLoader)
+      - pattern-not: yaml.load($X, SafeLoader)
+      - pattern-not: yaml.load_all(..., Loader=yaml.SafeLoader, ...)
+      - pattern-not: eval("...")
+      - pattern-not: exec("...")
